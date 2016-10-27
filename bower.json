@@ -1,0 +1,24 @@
+{
+  "name": "ssa/culinary-sg",
+  "description": "",
+  "main": "",
+  "authors": [
+    "John Lioneil Dionisio",
+    "Princess Ellen Alto"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "4.0",
+    "selectize": "^0.12.2",
+    "jquery-validation": "^1.15.1"
+  }
+}
