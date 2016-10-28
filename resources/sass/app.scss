@@ -1,9 +1,8 @@
-// @import "bootstrap"
-@import "mixins/commons";
-@import "mixins/overlays";
-
 @import "variables";
 
-@import "resets";
+@import "../../vendor/bootstrap/scss/bootstrap";
 
-@import "partials/scrollbars";
+@import "global";
+@import "typography";
+@import "partials/home";
+@import "partials/media_queries";
