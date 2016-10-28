@@ -12,128 +12,265 @@
 	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#febe4a">
 	<meta name="theme-color" content="#ffffff">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    
     <link rel="stylesheet" href="dist/css/app.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="vendor/slick/slick/slick.css"/>
+    <link rel="stylesheet" href="vendor/slick/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- <script type="text/javascript" src="vendor/iscroll/build/iscroll.js"></script> -->
+    <script>
+        // var myScroll;
+        // function loaded () {
+        //     myScroll = new IScroll('#wrapper', {
+        //         scrollbars: true,
+        //         mouseWheel: true,
+        //         interactiveScrollbars: true,
+        //         shrinkScrollbars: 'scale',
+        //         fadeScrollbars: true
+        //     });
+        // }
+        // document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    </script>
 </head>
+<!-- <body onload="loaded()"> -->
 <body>
 
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
-            <nav class="navbar navbar-light navbar-wide">
-                <div class="container-fluid">
-                    <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#main-menu-collapsable" aria-controls="main-menu-collapsable" aria-expanded="false" aria-label="Toggle navigation">☰</button>
-                    <a class="navbar-brand" href="index.html"><img src="http://placehold.it/100x50" alt="CulinaryInstitute" width="100"></a>
-                    <div class="collapse navbar-toggleable-xs pull-xs-right" id="main-menu-collapsable">
-                        <ul class="nav navbar-nav navbar-main text-uppercase pull-xs-left">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="about.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Courses</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="franchise.html">Schedule</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="franchise.html">News &amp; Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="franchise.html">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+            <nav class="nav-main navbar navbar-light bg-faded">
+                <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button>
+                <div class="collapse navbar-toggleable-xs" id="navbar-header">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <ul class="nav navbar-nav float-right">
+                        <li class="nav-item active">
+                            <a class="nav-link h2" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link h2" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link h2" href="#">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link h2" href="#">Schedule</a></li>
+                        <li class="nav-item"><a class="nav-link h2" href="#">News &amp; Events</a></li>
+                        <li class="nav-item"><a class="nav-link h2" href="#">Contact</a></li>
+                        <li class="nav-item"><a href="#"><span><i class="fa fa-facebook-square" aria-hidden="true"></i></span></a></li>
+                    </ul>
                 </div>
             </nav>
         </div>
-    </header> -->
+    </header>
 
-
-    <section class="section" id="h-home">
-        <div class="container">
-            <div class="col-xs-12"> 
-                <h1 id="fittext1" class="header-text">Bake <br> with us</h1>
+    <nav class="nav-collapse navbar navbar-light bg-faded">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar" aria-controls="exCollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        
+        <img src="http://placehold.it/350x150"  width="130" alt="">
+        <div class="collapse" id="exCollapsingNavbar">
+            <div class="bg-inverse p-a-1">
+                <ul>
+                    <li class="active"><a href=".html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href=".html">Courses</a></li>
+                    <li><a href=".html">Schedule</a></li>
+                    <li><a href=".html">News &amp; Events</a></li>
+                    <li><a href=".html">Contact</a></li>
+                    <li><a href="#"><span><i class="fa fa-facebook-square" aria-hidden="true"></i></span></a></li>
+                </ul>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <section class="section text-center" id="h-about">
-        <div class="container">
-            <div class="m-b-6">
-                <h3 class="r-p-bg m-b-2 text-white">30 years <br> of experience</h3>
-                <p>SSA Culinary Institute was founded in 2016 as another branch of the SSA Group of <br>
-                Companies. With over 30 years of experience in the training and consultancy industry, SSA <br> 
-                Consulting Group now extends its training expertise in the culinary industry.</p>
-            </div>
+    <!-- <div id="wrapper"> -->
+        <!-- <div id="scroller"> -->
+            <!-- <section class="section" id="h-home">
+                <div class="container">
+                    <div class="col-xs-12"> 
+                        <h1 id="fittext1" class="header-text m-b-3">Bake</h1>
+                        <h1 id="fittext2" class="header-text">with us</h1>
+                    </div>
+                </div>
+            </section> -->
 
-            <div class="m-b-5">
-                <h3 class="r-p-bg m-b-2 text-white">Renowned local <br> celebrity chef</h3>
-                <p>Partnering with the renowned local celebrity chef, Siti Mastura, SSA Culinary <br> 
-                Institute promises a series of quality baking courses for its trainees – revolving <br>
-                around personal development, entrepreneurship and teambuilding.</p>
-            </div>
+            <section class="section text-center" id="h-about">
+                <div class="container">
+                    <div class="m-b-6">
+                        <h3 class="r-p-bg m-b-2 text-white">30 years <br> of experience</h3>
+                        <p>SSA Culinary Institute was founded in 2016 as another branch of the SSA Group of <br>
+                        Companies. With over 30 years of experience in the training and consultancy industry, SSA <br> 
+                        Consulting Group now extends its training expertise in the culinary industry.</p>
+                    </div>
 
-            <div class="m-b-5">
-                <h3 class="r-p-bg m-b-2 text-white">Accredited under <br> SkillsFuture and WSQ</h3>
-                <p>Trainees to use their SkillsFuture Credit to pay for the baking courses. What’s more, <br>
-                some of its courses are also WSQ-accredited which means trainees get to enjoy <br>
-                subsidies! All ingredients used in our kitchen are halal.</p>
-            </div>
+                    <div class="m-b-5">
+                        <h3 class="r-p-bg m-b-2 text-white">Renowned local <br> celebrity chef</h3>
+                        <p>Partnering with the renowned local celebrity chef, Siti Mastura, SSA Culinary <br> 
+                        Institute promises a series of quality baking courses for its trainees – revolving <br>
+                        around personal development, entrepreneurship and teambuilding.</p>
+                    </div>
 
-            <ul class="b-img">
-                <li>
-                    <img src="resources/images/skill-future.png" alt="SkillsFuture" width="150">
-                </li>
-                <li>
-                    <img src="resources/images/ws.png" alt="SGWS" width="150">
-                </li>
-            </ul>
+                    <div class="m-b-5">
+                        <h3 class="r-p-bg m-b-2 text-white">Accredited under <br> SkillsFuture and WSQ</h3>
+                        <p>Trainees to use their SkillsFuture Credit to pay for the baking courses. What’s more, <br>
+                        some of its courses are also WSQ-accredited which means trainees get to enjoy <br>
+                        subsidies! All ingredients used in our kitchen are halal.</p>
+                    </div>
+
+                    <ul class="b-img">
+                        <li>
+                            <img src="resources/images/skill-future.png" alt="SkillsFuture" width="150">
+                        </li>
+                        <li>
+                            <img src="resources/images/ws.png" alt="SGWS" width="150">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section text-center" id="h-courses">
+                <div class="container">
+                    <h1 class="m-b-8">Courses</h1>
+                    <div class="row m-b-4">
+                        <div class="col-md-4">
+                            <img class="m-b-2" src="http://placehold.it/150x150" alt="">
+                            <h2>Short Courses</h2>
+                            <p>The “Baking For A Living – Beyond Hobbies” courses are specifically designed to touch on the various aspects of baking and provide an entrepreneurial platform for our trainees.</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <img class="m-b-2" src="http://placehold.it/150x150" alt="">
+                            <h2>WSQ Courses</h2>
+                            <p>Enjoy subsidies with WSQ-accredited courses which comprise a full competency map covering occupations in an industry with clear career development and training pathways.</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <img class="m-b-2" src="http://placehold.it/150x150" alt="">
+                            <h2>CORPORATE TEAMBUILDING</h2>
+                            <p>TUse our kitchen as a springboard for your organisation’s success!  We provide your organisation with a great way to bond with fun and interactive team building experiences for you and your colleagues.</p>
+                        </div>                   
+                    </div>
+
+                    <div class="row flex-items-xs-center">
+                        <div class="col-md-4">
+                            <img class="m-b-2" src="http://placehold.it/150x150">
+                            <h2>CUSTOMISED COURSES</h2>
+                            <p>Customise courses based on the needs of your organisation! Contact us for more details.</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <img class="m-b-2" src="http://placehold.it/150x150">
+                            <h2>Children's Courses</h2>
+                            <p>Engage your child in a hands-on entrepreneurial experience!</p>
+                        </div>
+                    </div>     
+                </div>
+            </section>
+
+            <section class="section" id="h-schedule">
+                <div class="container">
+                    <h1 class="m-b-8 text-white">Schedule</h1>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div id="scrollbarContainer" class="sched-content">
+                                <article>
+                                    <p><strong>Journey of Entrepreneurship: Baking for Children</strong></p>
+                                    <div class="column m-b-2">
+                                        <p>Duration: 19 Sept - 12 Oct 2016</p>
+                                        <p>Saturday</p>
+                                        <p>$$$</p>
+                                    </div>
+                                    <p>Time: 7:00pm - 10:00pm</p>
+                                </article>
+                                <article>
+                                    <p><strong>Journey of Entrepreneurship: Baking for Children</strong></p>
+                                    <div class="column m-b-2">
+                                        <p>Duration: 19 Sept - 12 Oct 2016</p>
+                                        <p>Saturday</p>
+                                        <p>$$$</p>
+                                    </div>
+                                    <p>Time: 7:00pm - 10:00pm</p>
+                                </article>
+                                <article>
+                                    <p><strong>Journey of Entrepreneurship: Baking for Children</strong></p>
+                                    <div class="column m-b-2">
+                                        <p>Duration: 19 Sept - 12 Oct 2016</p>
+                                        <p>Saturday</p>
+                                        <p>$$$</p>
+                                    </div>
+                                    <p>Time: 7:00pm - 10:00pm</p>
+                                </article>
+                                <article>
+                                    <p><strong>Journey of Entrepreneurship: Baking for Children</strong></p>
+                                    <div class="column m-b-2">
+                                        <p>Duration: 19 Sept - 12 Oct 2016</p>
+                                        <p>Saturday</p>
+                                        <p>$$$</p>
+                                    </div>
+                                    <p>Time: 7:00pm - 10:00pm</p>
+                                </article>
+                                <article>
+                                    <p><strong>Journey of Entrepreneurship: Baking for Children</strong></p>
+                                    <div class="column m-b-2">
+                                        <p>Duration: 19 Sept - 12 Oct 2016</p>
+                                        <p>Saturday</p>
+                                        <p>$$$</p>
+                                    </div>
+                                    <p>Time: 7:00pm - 10:00pm</p>
+                                </article>
+                                <article>
+                                    <p><strong>Journey of Entrepreneurship: Baking for Children</strong></p>
+                                    <div class="column m-b-2">
+                                        <p>Duration: 19 Sept - 12 Oct 2016</p>
+                                        <p>Saturday</p>
+                                        <p>$$$</p>
+                                    </div>
+                                    <p>Time: 7:00pm - 10:00pm</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section text-center" id="h-n_e">
+                <div class="container m-b-8">
+                    <h1 class="m-b-8">Photo Gallery</h1>
+                    <div class="slide-n-e">
+                        <div class="responsive">
+                            <div><img src="http://placehold.it/350x150" alt=""></div>
+                            <div><img src="http://placehold.it/350x150" alt=""></div>
+                            <div><img src="http://placehold.it/350x150" alt=""></div>
+                            <div><img src="http://placehold.it/350x150" alt=""></div>
+                            <div><img src="http://placehold.it/350x150" alt=""></div>
+                            <div><img src="http://placehold.it/350x150" alt=""></div>
+                            <div><img src="http://placehold.it/350x150" alt=""></div>
+                            <div><img src="http://placehold.it/350x150" alt=""></div>
+                            <div><img src="http://placehold.it/350x150" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <section class="section text-center p-t-0" id="h-n_e">
+                <div class="container" m-b-8>
+                    <h1 class="m-b-8">News &amp; Events</h1>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2 class="text-white bg-secondary p-3 text-light-weight">Macaroon Madness</h2>
+                            <p>Be the expert in producing these lovely coloured macaroons that we often see as a gift or at tea  parties.</p>
+                            <a class="text-primary text-black-weight" href="#">Read more...</a>
+                        </div>
+                        <div class="col-md-4">
+                            <h2 class="text-white bg-secondary p-2">Bring the latest <br> halloween trend!</h2>
+                            <p>The Halloween season marks the start of the most delicious extracurricular activity…</p>
+                            <a class="text-primary text-black-weight" href="#">Read more...</a>
+                        </div>
+                        <div class="col-md-4">
+                            <h2 class="text-white bg-secondary p-2">Screem for Ice <br> Cream!</h2>
+                            <p>Icing, often called frosting in the US, is a sweet, often creamy glaze made of sugar with a liquid, such as water or milk…</p>
+                            <a class="text-primary text-black-weight" href="#">Read more...</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </section>
-
-    <section class="section text-center" id="h-courses">
-        <div class="container">
-            <h1 class="m-b-5">Courses</h1>
-            <div class="row m-b-4">
-                <div class="col-md-4">
-                    <img class="m-b-2" src="http://placehold.it/150x150" alt="">
-                    <h2>Short Courses</h2>
-                    <p>The “Baking For A Living – Beyond Hobbies” courses are specifically designed to touch on the various aspects of baking and provide an entrepreneurial platform for our trainees.</p>
-                </div>
-
-                <div class="col-md-4">
-                    <img class="m-b-2" src="http://placehold.it/150x150" alt="">
-                    <h2>Short Courses</h2>
-                    <p>The “Baking For A Living – Beyond Hobbies” courses are specifically designed to touch on the various aspects of baking and provide an entrepreneurial platform for our trainees.</p>
-                </div>
-
-                <div class="col-md-4">
-                    <img class="m-b-2" src="http://placehold.it/150x150" alt="">
-                    <h2>Short Courses</h2>
-                    <p>The “Baking For A Living – Beyond Hobbies” courses are specifically designed to touch on the various aspects of baking and provide an entrepreneurial platform for our trainees.</p>
-                </div>
-            </div>
-
-            <div class="row flex-items-xs-center">
-                <div class="col-xs-4">
-                    <img class="m-b-2" src="http://placehold.it/150x150">
-                    <h2>Short Courses</h2>
-                    <p>The “Baking For A Living – Beyond Hobbies” courses are specifically designed to touch on the various aspects of baking and provide an entrepreneurial platform for our trainees.</p>
-                </div>
-
-                <div class="col-xs-4">
-                    <img class="m-b-2" src="http://placehold.it/150x150">
-                    <h2>Short Courses</h2>
-                    <p>The “Baking For A Living – Beyond Hobbies” courses are specifically designed to touch on the various aspects of baking and provide an entrepreneurial platform for our trainees.</p>
-                </div>
-            </div>     
-        </div>
-    </section>
-
-    <section class="section" id="h-schedule"></section>
-
+    </div>
 
     <script src="resources/js/jquery.min.js"></script>
     <script src="resources/js/tether.min.js"></script>
@@ -141,11 +278,8 @@
     <script src="resources/js/modernizr-2.6.2.min.js"></script>
     <script src="vendor/tether/dist/js/tether.min.js"></script>
     <script src="vendor/FitText.js/jquery.fittext.js"></script>
+    <script src="vendor/slick/slick/slick.min.js"></script>
     <script src="resources/js/custom.js"></script>
-    <script>
-        $("#fittext1").fitText();
-        $("#fittext2").fitText(1.2);
-        $("#fittext3").fitText(1.1, { minFontSize: '50px', maxFontSize: '75px' });
-    </script>
+    
 </body>
 </html>

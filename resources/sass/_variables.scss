@@ -16,14 +16,16 @@ $header-font-family: "nightingale", Arial, Helvetica, sans-serif;
 
 $primary: #F8BA37;	
 $secondary: #5D5E5E;
+$darker-gray: #333333;
 $dark-gray: #304042;
 $light-gray: #B6B6B7;
 $white: #ffffff;
 
-$primary-color: #F8BA37;
-$secondary-color: #5D5E5E;
-$dark-color: #304042;
-$light-color: #B6B6B7;
+$primary-color: $primary;
+$secondary-color: $secondary;
+$dark-color: $dark-gray;
+$darker-color: $darker-gray;
+$light-color: $light-gray;
 
 $font-size-h1: 40px;
 $font-size-h2: 20px;

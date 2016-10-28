@@ -1,4 +1,21 @@
-h1, h2, h3, h4, h5, h6 {
+.font {
+	&-title {
+		font-family: $primary-font-family;
+	}
+	&-text {
+		font-family: $secondary-font-family;
+	}
+	&-nav {
+		font-family: $nav-font-family;
+	}
+	&-header {
+		font-family: $header-font-family;
+	}
+}
+
+
+	h1, h2, h3, h4, h5, h6 {
+	color: $darker-color;
 	font-family: $primary-font-family;
 		    -webkit-transition: 0.4s;
 			   -moz-transition: 0.4s;
@@ -6,7 +23,6 @@ h1, h2, h3, h4, h5, h6 {
 		    		transition: 0.4s;
 }
 
-h1, h2, h3, h4, h5, h6,
 p, a, span {
 	color: $dark-gray;
 }
@@ -57,20 +73,53 @@ p {
 	}
 }
 
+.bg {
+	&-primary {
+		background: $primary-color;
+	}
+	&-secondary {
+		background: $secondary-color;
+	}
+	&-dark {
+		background: $dark-color;
+	}
+	&-light {
+		background: $light-color;
+	}
+}
+
 .text {
 	&-white {
 		color: $white;
 	}
 	&-light {
-		color: $light-color;
+		color: $light-color !important;
 	}
 	&-dark {
-		color: $dark-color;
+		color: $dark-color !important;
 	}
 	&-primary {
-		color: $primary-color;
+		color: $primary-color !important;
 	}
 	&-secondary {
-		color: $secondary-color;
+		color: $secondary-color !important;
+	}
+}
+
+.text {
+	&-thin-weight {
+		font-weight: 100;
+	}
+	&-light-weight {
+		font-weight: 300;
+	}
+	&-bold-weight {
+		font-weight: 500;
+	}
+	&-black-weight {
+		font-weight: 700;
+	}
+	&-heavy-weight {
+		font-weight: 900;
 	}
 }

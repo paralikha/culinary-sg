@@ -51,6 +51,16 @@ input[type="email"]:-ms-input-placeholder {
     color: $dark-gray;  
 }
 
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+html {
+	-ms-touch-action: none;
+}
+
 html, body {
 	overflow-x: hidden;
     -webkit-transition: 0.4s;
@@ -85,6 +95,18 @@ body {
 	text-align: center;
 }
 
+.p-2 {
+	padding: 20px;
+}
+
+.p-3 {
+	padding: 30px;
+}
+
+.p-t-0 {
+	padding-top: 0;
+}
+
 .m-t-5 {
 	margin-top: 50px;
 }
@@ -111,4 +133,16 @@ body {
 
 .m-b-6 {
 	margin-bottom: 60px;
+}
+
+.m-b-7 {
+	margin-bottom: 70px;
+}
+
+.m-b-8 {
+	margin-bottom: 80px;
+}
+
+.clear {
+	clear: both;
 }
