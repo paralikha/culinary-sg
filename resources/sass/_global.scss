@@ -4,22 +4,6 @@
 	box-sizing: border-box !important;
 }
 
-::-webkit-input-placeholder {
-    color: $white;
-}
-
-::-moz-placeholder {
-    color: $white;
-}
-
-:-ms-input-placeholder {
-    color: $white;
-}
-
-:-moz-placeholder {
-    color: $white;
-}
-
 // Firefox
 input[type="text"]::-moz-focus-inner {   
     border : 0px;
@@ -35,20 +19,26 @@ input[type="text"]:focus {
     		box-sizing: border-box;
 }
 
-input[type="email"]::-webkit-input-placeholder {
-    color: $dark-gray;
+::-webkit-input-placeholder {
+   color: $white !important;
 }
- 
-input[type="email"]:-moz-placeholder {
-    color: $dark-gray;  
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $white !important;  
 }
- 
-input[type="email"]::-moz-placeholder {
-    color: $dark-gray;  
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $white !important;  
 }
- 
-input[type="email"]:-ms-input-placeholder {  
-    color: $dark-gray;  
+
+:-ms-input-placeholder {  
+   color: $white !important;  
+}
+
+#inputName, #inputEmail, #inputContact, #msgTextArea {
+    background-color: $primary !important;
+    border: none !important;
+    border-radius: 0 !important;
 }
 
 * {
@@ -95,6 +85,14 @@ body {
 	text-align: center;
 }
 
+.text-left {
+	text-align: left;
+}
+
+.p-1-5 {
+	padding: 15px;
+}
+
 .p-2 {
 	padding: 20px;
 }
@@ -105,6 +103,10 @@ body {
 
 .p-t-0 {
 	padding-top: 0;
+}
+
+.m-t-3 {
+	margin-top: 30px;
 }
 
 .m-t-5 {
@@ -145,4 +147,21 @@ body {
 
 .clear {
 	clear: both;
+}
+
+.w150 {
+	width: 150px;
+}
+
+.d-inline {
+	display: inline-block !important;
+}
+
+
+// nicescroll
+.nicescroll-rails div {
+	border: 0 !important;
+	background: $dark-color !important;
+	opacity: 0.5 !important;
+	width: 7px !important;
 }

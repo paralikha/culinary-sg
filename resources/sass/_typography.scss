@@ -6,7 +6,7 @@
 		font-family: $secondary-font-family;
 	}
 	&-nav {
-		font-family: $nav-font-family;
+		// font-family: $nav-font-family;
 	}
 	&-header {
 		font-family: $header-font-family;
@@ -67,15 +67,18 @@ p {
 .header-text {
 	font-family: $header-font-family;
 	text-transform: none;
+	font-size: 7rem;
+	color: $dark-color;
 
 	span {
-		font-size: 55px;
+		font-size: 5rem;
+		color: $dark-color;
 	}
 }
 
 .bg {
 	&-primary {
-		background: $primary-color;
+		background: $primary-color !important;
 	}
 	&-secondary {
 		background: $secondary-color;
@@ -91,6 +94,9 @@ p {
 .text {
 	&-white {
 		color: $white;
+		p {
+			color: $white;
+		}
 	}
 	&-light {
 		color: $light-color !important;

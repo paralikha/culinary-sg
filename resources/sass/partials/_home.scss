@@ -1,8 +1,57 @@
+// ---home---
+#h-home {
+    opacity: 1;
+    height: 100vh;
+
+    .landing-page {
+
+        img {
+            width: 1366px;
+            height: auto;
+            max-width: 100%;
+            position: fixed;
+            right: 0;
+            top: 130px;
+        }
+    }
+}
+
 // ---about---
+#h-about {  
+    background-image: url("../../resources/images/bg-about.png");
+    // background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+    // background-attachment: fixed;
+
+    .icon {
+        display: table-cell;
+        width: 20%;
+        font-size: 100%;
+        vertical-align: top;
+
+        img {
+            width: 130px;
+        }
+    }
+
+    .content {
+        display: table-cell;
+        padding: 0 0 0 15px;
+        vertical-align: middle;
+    }
+}
+
 .r-p-bg {
 	padding-top: 25px;
     padding-bottom: 20px;
-    background-image: url("../../resources/images/rolling-pin.jpg");
+    background-image: url("../../resources/images/rolling-pin.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -26,14 +75,20 @@
 
 // ---courses---
 #h-courses {
-	background-image: url("../../resources/images/course-bg.png");
-    background-size: contain;
+    background--color: $white;
+    background-position: top center;
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
-    transition: 0.4s;
+    transition: .4s;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    .circle-icon {
+        width: 100%;
+        max-width: 160px;
+    }
 
     .courses-features {
 	    padding: 0;
@@ -48,8 +103,9 @@
 
 // ---schedule---
 #h-schedule {
-	background-image: url("http://www.pixel-industry.com/html/royal-plate/img/pics/bkg-img3.jpg");
+	background-image: url("../../resources/images/bg-sched.png");
     background-size: cover;
+    background-position: center center;
     transition: 0.4s;
     background-repeat: no-repeat;
 
@@ -59,7 +115,7 @@
 	    height: 600px;
 	    overflow-x: hidden;
 	    overflow: auto;
-	    min-width: 600px;
+	    width: 100%;
 
 	    article {
 	    	margin-bottom: 10px;
@@ -101,12 +157,12 @@
 	}
 
 	#scrollbarContainer::-webkit-scrollbar-track {
-		background-color: $light-color;
+		background-color: $dark-color;
 	}
 
 	#scrollbarContainer::-webkit-scrollbar {
 		width: 10px;
-		background-color: $light-color;
+		background-color: $dark-color;
 	}
 
 	#scrollbarContainer::-webkit-scrollbar-thumb {
@@ -116,13 +172,104 @@
 
 // ---news_events---
 #h-n_e {
-	background-image: url("../../resources/images/course-bg.png");
-    background-size: contain;
+	background-color: $white;
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
     transition: 0.4s;
     background-attachment: fixed;
+
+    .slick-slide {
+        margin-right: 2px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .s1 {
+        display: table-cell;
+        width: 60px;
+        font-size: 100%;
+        vertical-align: top;
+
+        img {
+            max-width: 180px;
+            position: absolute;
+            top: 11px;
+            left: -25px;
+        }
+    }
+
+    .s2 {
+        display: table-cell;
+        padding: 0 0 0 20px;
+    }
+
+    .slide-n-e {
+        margin: 0 10px !important;
+    }
+}
+
+// ---contact_us---
+#contact {
+    background-image: url("../../resources/images/bg-contact.png");
+    background-size: cover;
+    background-position: center center;
+    transition: .4s;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    .icon {
+        display: table-cell;
+        width: 7%;
+        font-size: 100%;
+        vertical-align: top;
+
+        img {
+            width: 25px;
+        }
+    }
+
+    .content {
+        display: table-cell;
+        padding: 0 0 0 15px;
+
+        p {
+            font-size: 14px;
+            color: $primary-color;
+
+            span {
+                color: $white;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .contact-form {
+        background: rgba(182, 182, 183, 0.75);
+        padding: 50px;
+        border-radius: 40px;
+    }
+
+    p {
+        color: $white;
+
+        span {
+            color: $primary;
+        }
+    }
+
+    .btn-contact {
+        background: #000;
+        border: none;
+        border-radius: 0;
+        
+        &:focus {
+            outline: 0;
+        }
+    }
 }
 
