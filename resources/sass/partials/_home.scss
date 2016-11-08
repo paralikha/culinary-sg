@@ -14,9 +14,27 @@
 
     .title-text {
         position: absolute;
-        top: 25%;
+        top: 30%;
         left: 25%;
         transform: translate(-25%, -25%);
+
+        h1 {
+            font-size: 7rem;
+            color: #000;
+
+            span {
+                color: #000;
+                font-size: 3rem;
+            }
+        }
+
+        .btn-enroll {
+            color: $primary;
+            background-color: $dark-color;
+            border-radius: 10px;
+            padding: 10px 25px;
+            font-family: $nav-font-family;
+        }
     }
     
 }
