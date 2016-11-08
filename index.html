@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="vendor/slick/slick/slick-theme.css"/>
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/animate.css/animate.css">
+    <link rel="stylesheet" href="vendor/hero-slider/css/style.css">
 </head>
 
 <body>
@@ -61,8 +62,18 @@
         </div>
     </nav>
 
-    <section class="section" id="h-home">
-        
+    <section class="section p-0" id="h-home">
+        <ul class="cd-hero-slider autoplay">
+            <li class="selected">
+                <div class="cd-full-width">
+                    <img src="resources/images/bg-home.png" alt="">
+                </div>
+                <div class="title-text">
+                    <h1 class="header-text m-b-2">Bake</h1>
+                    <h1 class="header-text">with us</h1>
+                </div>
+            </li>
+        </ul>
     </section>
 
     <section class="section text-center" id="h-about">
@@ -368,6 +379,7 @@
     <script src="resources/js/custom.js"></script>
     <script src="vendor/nicescroll/jquery.nicescroll.js"></script>
     <script src="vendor/wow/dist/wow.min.js"></script>
+    <script src="vendor/hero-slider/js/main.js"></script>
     <script>
         new WOW().init();
     </script>
