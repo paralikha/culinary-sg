@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/animate.css/animate.css">
     <link rel="stylesheet" href="vendor/hero-slider/css/style.css">
+    <link rel="stylesheet" href="vendor/customScrollbar/jquery.mCustomScrollbar.css" />
 </head>
 
 <body>
@@ -161,7 +162,7 @@
             <h1 class="m-b-8 text-white">Schedule</h1>
             <div class="row">
                 <div class="col-md-8">
-                    <div id="scrollbarContainer" class="sched-content">
+                    <div class="sched-content mCustomScrollbar">
                         <article>
                             <p><strong>Journey of Entrepreneurship: Baking for Children</strong></p>
                             <div class="column m-b-2">
@@ -382,8 +383,17 @@
     <script src="vendor/nicescroll/jquery.nicescroll.js"></script>
     <script src="vendor/wow/dist/wow.min.js"></script>
     <script src="vendor/hero-slider/js/main.js"></script>
+    <script src="vendor/customScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script>
         new WOW().init();
+
+        (function($){
+            $(window).on("load",function(){
+                $(".sched-content").mCustomScrollbar({
+                    axis: "x"
+                });
+            });
+        })(jQuery);
     </script>
 </body>
 </html>

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="vendor/slick/slick/slick.css"/>
     <link rel="stylesheet" href="vendor/slick/slick/slick-theme.css"/>
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/customScrollbar/jquery.mCustomScrollbar.css" />
 </head>
 <body>
     <header class="header">
@@ -104,7 +105,7 @@
                                                 <li><span>Bakers who wish to learn how to get started on making 1st sale & learn tips on presentation skills</span></li>
                                             </ul>
 
-                                            <div id="scrollbarContainer" class="course-content">
+                                            <div class="course-content mCustomScrollbar">
                                                 <article class="bg-light">
                                                     <div class="row">
                                                         <div class="col-xs-9">
@@ -185,5 +186,16 @@
     <script src="vendor/slick/slick/slick.min.js"></script>
     <script src="resources/js/custom.js"></script>
     <script src="vendor/nicescroll/jquery.nicescroll.js"></script>
+    <script src="vendor/customScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script>
+        (function($){
+            $(window).on("load",function(){
+                $(".course-content").mCustomScrollbar({
+                    axis: "x"
+                });
+            });
+        })(jQuery);
+    </script>
 </body>
 </html>

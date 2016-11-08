@@ -141,22 +141,6 @@
         width: 210px;
         max-width: 100%;
     }
-
-    #scrollbarContainer::-webkit-scrollbar-track {
-        background-color: $dark-color;
-        display: inherit;
-    }
-
-    #scrollbarContainer::-webkit-scrollbar {
-        width: 10px;
-        background-color: $dark-color;
-        display: inherit;
-    }
-
-    #scrollbarContainer::-webkit-scrollbar-thumb {
-        background-color: $primary-color;
-        display: inherit;
-    }
 }
 
 // seperated style on courses
