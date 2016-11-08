@@ -17,15 +17,21 @@
         top: 30%;
         left: 25%;
         transform: translate(-25%, -25%);
+        z-index: 1000;
 
         h1 {
             font-size: 7rem;
             color: #000;
+            margin-bottom: -10px;
 
             span {
                 color: #000;
                 font-size: 3rem;
             }
+        }
+
+        h1:nth-child(2) {
+            margin-bottom: 40px;
         }
 
         .btn-enroll {
@@ -34,7 +40,8 @@
             border-radius: 10px;
             padding: 10px 25px;
             font-family: $nav-font-family;
-        }
+            display: inline;
+        } 
     }
     
 }
@@ -285,10 +292,16 @@
         }
     }
 
+    .img-c-c {
+        width: 127px;
+        max-width: 100%;
+    }
+
     .btn-contact {
         background: #000;
         border: none;
         border-radius: 0;
+        display: inline;
         
         &:focus {
             outline: 0;
