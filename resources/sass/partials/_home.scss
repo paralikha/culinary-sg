@@ -188,15 +188,18 @@
 
 	#scrollbarContainer::-webkit-scrollbar-track {
 		background-color: $dark-color;
+        display: inherit !important;
 	}
 
 	#scrollbarContainer::-webkit-scrollbar {
 		width: 10px;
 		background-color: $dark-color;
+        display: inherit !important;
 	}
 
 	#scrollbarContainer::-webkit-scrollbar-thumb {
 		background-color: $primary-color;
+        display: inherit !important;
 	}
 }
 

@@ -66,18 +66,21 @@
         position: absolute;
         right: 0;
         z-index: -1;
-        -webkit-backface-visibility: hidden; }
+        -webkit-backface-visibility: hidden; 
+    }
 
     .edge_top:before {
         top: 0;
         -webkit-transform: skewY(3.5deg);
         transform: skewY(3.5deg);
         -webkit-transform-origin: 100% 0;
-        transform-origin: 100% 0; }
+        transform-origin: 100% 0; 
+    }
 
     .edge_top_relative {
         position: relative;
-        z-index: 1; }
+        z-index: 1; 
+    }
 
     .edge_top_relative:before {
         background: inherit;
@@ -88,14 +91,16 @@
         position: absolute;
         right: 0;
         z-index: -1;
-        -webkit-backface-visibility: hidden; }
+        -webkit-backface-visibility: hidden; 
+    }
 
     .edge_top_relative:before {
         top: 0;
         -webkit-transform: skewY(3.5deg);
         transform: skewY(3.5deg);
         -webkit-transform-origin: 100% 0;
-        transform-origin: 100% 0; }
+        transform-origin: 100% 0; 
+    }
 
     .-bg-dark {
         background: $dark-gray;
@@ -132,17 +137,25 @@
         }
     }
 
+    .c-r-img img {
+        width: 210px;
+        max-width: 100%;
+    }
+
     #scrollbarContainer::-webkit-scrollbar-track {
         background-color: $dark-color;
+        display: inherit;
     }
 
     #scrollbarContainer::-webkit-scrollbar {
         width: 10px;
         background-color: $dark-color;
+        display: inherit;
     }
 
     #scrollbarContainer::-webkit-scrollbar-thumb {
         background-color: $primary-color;
+        display: inherit;
     }
 }
 
@@ -187,6 +200,7 @@
         }
 
         .nav-link {
+            display: inherit;
             border: none;
         }
 
