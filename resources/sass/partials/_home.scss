@@ -1,9 +1,12 @@
 // ---home---
 #h-home {
     background-image: url("../../resources/images/bg-home.png");
-    background-size: 1366px auto;
+    -webkit-background-size: 1600px;
+    -moz-background-size: 1600px;
+    -o-background-size: 1600px;
+    background-size: 1600px;
     background-repeat: no-repeat !important;
-    background-position: top center;
+    background-position: bottom center !important;
     width: 100%;
     height: 90vh;
     overflow: hidden;

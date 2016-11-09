@@ -68,6 +68,6 @@ $(document).ready(function() {
             el.lightGallery({
                 selector: '#imageGallery .lslide'
             });
-        }   
-    });  
+        }
+    }); 
 });
