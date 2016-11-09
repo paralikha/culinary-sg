@@ -1,25 +1,25 @@
+// @media only screen 
+// and (min-width: 150px) 
+// and (max-width: 480px) {
+//     #h-home .title-text h1 {
+//         font-size: 3.5rem !important;
+//         margin-bottom: 0;
+
+//         span {
+//             font-size: 1rem !important;
+//         }
+//     }
+
+//     #h-home .title-text .btn-enroll {
+//         font-size: 16px;
+//     }
+// }
+
 @media only screen 
 and (min-width: 150px) 
-and (max-width: 480px) {
-    #h-home .title-text h1 {
-        font-size: 1.8rem !important;
-        margin-bottom: 0;
-
-        span {
-            font-size: .8rem !important;
-        }
-    }
-
-    #h-home .title-text .btn-enroll {
-        font-size: 16px;
-    }
-}
-
-@media only screen 
-and (min-width: 481px) 
 and (max-width: 766px) {
     #h-home .title-text h1 {
-        font-size: 3rem !important;
+        font-size: 4rem !important;
         margin-bottom: 0;
 
         span {
@@ -32,7 +32,7 @@ and (max-width: 766px) {
 and (min-width: 767px) 
 and (max-width: 1019px) {
     #h-home .title-text h1 {
-        font-size: 4rem !important;
+        font-size: 5rem !important;
         margin-bottom: 0;
 
         span {
@@ -76,7 +76,7 @@ and (max-width: 1019px) {
 
 @media only screen and (max-width: 1020px) {
     #h-home .title-text h1 {
-        font-size: 5rem;
+        font-size: 6rem;
         margin-bottom: 0;
         
         span {

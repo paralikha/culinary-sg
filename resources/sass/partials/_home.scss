@@ -1,5 +1,14 @@
 // ---home---
 #h-home {
+    background-image: url("../../resources/images/bg-home.png");
+    background-size: 1366px auto;
+    background-repeat: no-repeat !important;
+    background-position: top center;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
     opacity: 1;
 
     img {
@@ -14,7 +23,7 @@
 
     .title-text {
         position: absolute;
-        top: 30%;
+        top: 35%;
         left: 25%;
         transform: translate(-25%, -25%);
         z-index: 1000;
@@ -79,8 +88,8 @@
 }
 
 .r-p-bg {
-	padding-top: 25px;
-    padding-bottom: 20px;
+	padding-top: 15px;
+    padding-bottom: 15px;
     background-image: url("../../resources/images/rolling-pin.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -230,6 +239,10 @@
 
     .slick-dots {
         display: none !important;
+    }
+
+    .slide-n-e #imageGallery img {
+        width: 100%;
     }
 }
 

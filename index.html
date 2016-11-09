@@ -13,13 +13,14 @@
 	<meta name="theme-color" content="#ffffff">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <link rel="stylesheet" href="dist/css/app.min.css">
+    <link rel="stylesheet" href="vendor/lightSlider/dist/css/lightslider.css">
+    <link rel="stylesheet" href="vendor/lightGallery/dist/css/lightgallery.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" href="vendor/slick/slick/slick.css"/>
-    <link rel="stylesheet" href="vendor/slick/slick/slick-theme.css"/>
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/animate.css/animate.css">
-    <link rel="stylesheet" href="vendor/hero-slider/css/style.css">
+    <!-- <link rel="stylesheet" href="vendor/hero-slider/css/style.css"> -->
     <link rel="stylesheet" href="vendor/customScrollbar/jquery.mCustomScrollbar.css" />
+    
 </head>
 
 <body>
@@ -47,7 +48,8 @@
             <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
         
-        <img src="resources/images/brand-logo.png"  width="130" alt="">
+        <img class="pull-xs-left" src="resources/images/brand-logo.png"  width="130" alt="">
+        <div class="clear"></div>
         <div class="collapse" id="exCollapsingNavbar">
             <div class="bg-inverse p-a-1">
                 <ul>
@@ -63,8 +65,8 @@
         </div>
     </nav>
 
-    <section class="section p-0" id="h-home">
-        <ul class="cd-hero-slider autoplay">
+    <section class="section text-center" id="h-home">
+        <!-- <ul class="cd-hero-slider autoplay">
             <li class="selected">
                 <div class="title-text text-center">
                     <h1 class="header-text">Bake</h1>
@@ -76,7 +78,12 @@
                 </div>
                 
             </li>
-        </ul>
+        </ul> -->
+        <div class="title-text">
+            <h1 class="header-text">Bake</h1>
+            <h1 class="header-text"><span>with us</span></h1>
+            <a href="https://www.google.com" class="ripplelink h2 btn-enroll">Enrol Now</a>
+        </div>
     </section>
 
     <section class="section text-center" id="h-about">
@@ -239,17 +246,38 @@
         <div class="container">
             <h1 class="m-b-8">Photo Gallery</h1>
             <div class="slide-n-e">
-                <div class="responsive">
-                    <div><img src="resources/images/sample/1.jpg" alt=""></div>
-                    <div><img src="resources/images/sample/2.jpg" alt=""></div>
-                    <div><img src="resources/images/sample/3.jpg" alt=""></div>
-                    <div><img src="resources/images/sample/4.jpg" alt=""></div>
-                    <div><img src="resources/images/sample/5.jpg" alt=""></div>
-                    <div><img src="resources/images/sample/1.jpg" alt=""></div>
-                    <div><img src="resources/images/sample/2.jpg" alt=""></div>
-                    <div><img src="resources/images/sample/3.jpg" alt=""></div>
-                    <div><img src="resources/images/sample/4.jpg" alt=""></div>
-                </div>
+                <ul id="imageGallery">
+                        <li data-thumb="resources/images/sample/img_1.jpg" data-src="resources/images/sample/img_1.jpg">
+                            <img src="resources/images/sample/img_1.jpg" />
+                        </li>
+                        <li data-thumb="resources/images/sample/img_2.jpg" data-src="resources/images/sample/img_2.jpg">
+                            <img src="resources/images/sample/img_2.jpg" />
+                        </li>
+                        <li data-thumb="resources/images/sample/img_3.jpg" data-src="resources/images/sample/img_3.jpg">
+                            <img src="resources/images/sample/img_3.jpg" />
+                        </li>
+                        <li data-thumb="resources/images/sample/img_4.jpg" data-src="resources/images/sample/img_4.jpg">
+                            <img src="resources/images/sample/img_4.jpg" />
+                        </li>
+                        <li data-thumb="resources/images/sample/img_5.jpg" data-src="resources/images/sample/img_5.jpg">
+                            <img src="resources/images/sample/img_5.jpg" />
+                        </li>
+                        <li data-thumb="resources/images/sample/img_1.jpg" data-src="resources/images/sample/img_1.jpg">
+                            <img src="resources/images/sample/img_1.jpg" />
+                        </li>
+                        <li data-thumb="resources/images/sample/img_2.jpg" data-src="resources/images/sample/img_2.jpg">
+                            <img src="resources/images/sample/img_2.jpg" />
+                        </li>
+                        <li data-thumb="resources/images/sample/img_3.jpg" data-src="resources/images/sample/img_3.jpg">
+                            <img src="resources/images/sample/img_3.jpg" />
+                        </li>
+                        <li data-thumb="resources/images/sample/img_4.jpg" data-src="resources/images/sample/img_4.jpg">
+                            <img src="resources/images/sample/img_4.jpg" />
+                        </li>
+                        <li data-thumb="resources/images/sample/img_5.jpg" data-src="resources/images/sample/img_5.jpg">
+                            <img src="resources/images/sample/img_5.jpg" />
+                        </li>
+                    </ul>
             </div>
         </div>
     </section>
@@ -377,12 +405,14 @@
     <script src="resources/js/bootstrap.min.js"></script>
     <script src="resources/js/modernizr-2.6.2.min.js"></script>
     <script src="vendor/tether/dist/js/tether.min.js"></script>
-    <script src="vendor/slick/slick/slick.min.js"></script>
     <script src="resources/js/custom.js"></script>
+    <script src="vendor/lightSlider/dist/js/lightslider.min.js"></script>
+    <script src="vendor/lightGallery/dist/js/lightgallery.min.js"></script>
     <script src="vendor/nicescroll/jquery.nicescroll.js"></script>
     <script src="vendor/wow/dist/wow.min.js"></script>
-    <script src="vendor/hero-slider/js/main.js"></script>
+    <!-- <script src="vendor/hero-slider/js/main.js"></script> -->
     <script src="vendor/customScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    
     <script>
         new WOW().init();
 

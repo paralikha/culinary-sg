@@ -61,3 +61,25 @@
 	border-radius: 0 !important;
 	margin: 0 !important;
 }
+
+// lightSLider
+#imageGallery {
+    
+    li {
+        // padding-right: 10px;
+    }
+
+    img {
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+.lSSlideOuter .lSPager.lSGallery {
+    display: none !important;
+}
+
+.lSAction > a {
+    background-image: url("../../resources/images/controls_edit.png") !important;
+    opacity: 1 !important;
+}
