@@ -5,7 +5,10 @@
 
 @font-face {
     font-family: "nightingale";
-    src: url('../../resources/fonts/nightingale/Nightingale Sample.otf') format('otf'),
+    src: url('../../resources/fonts/nightingale/Nightingale_Sample.eot');
+    src: url('../../resources/fonts/nightingale/Nightingale_Sample.eot') format('eot'),
+    	 url('../../resources/fonts/nightingale/Nightingale_Sample.woff') format('woff'),
+    	 url('../../resources/fonts/nightingale/Nightingale_Sample.otf') format('otf'),
          url('../../resources/fonts/nightingale/Nightingale_Sample.ttf') format('truetype');
 }
 
