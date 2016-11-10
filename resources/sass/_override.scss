@@ -1,0 +1,85 @@
+// iScroll
+
+#scroller {
+	position: absolute;
+	// z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 100%;
+	-webkit-transform: translateZ(0);
+	   -moz-transform: translateZ(0);
+	    -ms-transform: translateZ(0);
+	     -o-transform: translateZ(0);
+			transform: translateZ(0);
+	-webkit-touch-callout: none;
+	  -webkit-user-select: none;
+	     -moz-user-select: none;
+	      -ms-user-select: none;
+			  user-select: none;
+	-webkit-text-size-adjust: none;
+	   -moz-text-size-adjust: none;
+		-ms-text-size-adjust: none;
+		 -o-text-size-adjust: none;
+			text-size-adjust: none;
+}
+
+#wrapper {
+	position: absolute;
+	// z-index: 1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    // opacity: 0 !important;
+    color: $primary-color !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// customScrollbar
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background-color: $primary !important;
+	width: 12px !important;
+	border-radius: 0!important;
+	opacity: 1 !important;
+	margin: 0 !important;
+
+	&:hover {
+		background-color: $primary !important;
+	}
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+	background-color: $dark-color !important;
+	width: 12px !important;
+	border-radius: 0 !important;
+	margin: 0 !important;
+}
+
+// lightSLider
+#imageGallery {
+    
+    li {
+        // padding-right: 10px;
+    }
+
+    img {
+        width: 100%;
+        cursor: pointer;
+    }
+}
+
+.lSSlideOuter .lSPager.lSGallery {
+    display: none !important;
+}
+
+.lSAction > a {
+    background-image: url("../../resources/images/controls_edit.png") !important;
+    opacity: 1 !important;
+}

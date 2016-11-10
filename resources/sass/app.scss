@@ -1,9 +1,12 @@
-// @import "bootstrap"
-@import "mixins/commons";
-@import "mixins/overlays";
-
 @import "variables";
 
-@import "resets";
+@import "../../vendor/bootstrap/scss/bootstrap";
 
-@import "partials/scrollbars";
+@import "global";
+@import "typography";
+@import "partials/nav";
+@import "partials/home";
+@import "partials/courses";
+@import "partials/media_queries";
+@import "override";
+@import "materialize_btn";

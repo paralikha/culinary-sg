@@ -1,0 +1,86 @@
+// @media only screen 
+// and (min-width: 150px) 
+// and (max-width: 480px) {
+//     #h-home .title-text h1 {
+//         font-size: 3.5rem !important;
+//         margin-bottom: 0;
+
+//         span {
+//             font-size: 1rem !important;
+//         }
+//     }
+
+//     #h-home .title-text .btn-enroll {
+//         font-size: 16px;
+//     }
+// }
+
+@media only screen 
+and (min-width: 150px) 
+and (max-width: 766px) {
+    #h-home .title-text h1 {
+        font-size: 4rem !important;
+        margin-bottom: 0;
+
+        span {
+            font-size: 1.5rem !important;
+        }
+    }
+}
+
+@media only screen 
+and (min-width: 767px) 
+and (max-width: 1019px) {
+    #h-home .title-text h1 {
+        font-size: 5rem !important;
+        margin-bottom: 0;
+
+        span {
+            font-size: 1.8rem;
+        }
+    }
+}
+//---main---
+@media only screen and (max-width: 768px) {
+    .b-img {
+
+        li {
+            margin-right: 0;
+        }
+    }
+
+    .nav-main, header.sticky {
+		display: none;
+	}
+
+    .bg-white .bx-tab {
+        min-height: 0;
+    }   
+
+    #courses .nav-tabs {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+	.nav-collapse {
+    	display: none;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    header .nav-main ul li {
+        margin-right: 0rem;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    #h-home .title-text h1 {
+        font-size: 6rem;
+        margin-bottom: 0;
+        
+        span {
+            font-size: 2rem;
+        }
+    }
+}
