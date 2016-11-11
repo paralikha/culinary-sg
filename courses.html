@@ -25,12 +25,12 @@
                 <a class="navbar-brand" href="index.html"><img src="resources/images/brand-logo.png" width="150" alt="SSA Culinary"></a>
 
                 <ul class="nav navbar-nav pull-xs-right">
-                    <li class="nav-item"><a class="nav-link h2" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a class="nav-link h2" href="about.html">About</a></li>
-                    <li class="nav-item active"><a class="nav-link h2" href="courses.html">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link h2" href="schedule.html">Schedule</a></li>
-                    <li class="nav-item"><a class="nav-link h2" href="n_e.html">News &amp; Events</a></li>
-                    <li class="nav-item"><a class="nav-link h2" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link h2" href="index.html">Back to Home Page <span class="sr-only">(current)</span></a></li>
+                    <!-- <li class="nav-item"><a class="nav-link h2" href="about.html">About</a></li> -->
+                    <!-- <li class="nav-item active"><a class="nav-link h2" href="courses.html">Courses</a></li> -->
+                    <!-- <li class="nav-item"><a class="nav-link h2" href="schedule.html">Schedule</a></li> -->
+                    <!-- <li class="nav-item"><a class="nav-link h2" href="n_e.html">News &amp; Events</a></li> -->
+                    <!-- <li class="nav-item"><a class="nav-link h2" href="#">Contact</a></li> -->
                     <li class="nav-item"><a href="#"><span><i class="fa fa-facebook-square" aria-hidden="true"></i></span></a></li>
                 </ul>
             </div>
@@ -59,7 +59,7 @@
         </div>
     </nav>
 
-    <section class="wrapper text-center" id="courses">
+    <section class="section wrapper text-center" id="courses">
         <div class="container">
             <div class="bg-white">
                 <div class="block -bg-dark edge_top">
@@ -69,19 +69,19 @@
                     <div class="col-md-3">
                         <div class="bx-tab text-left">
                             <ul class="nav m-b-5 nav-tabs" role="tablist">
-                                <li class="nav-item">
+                                <li class="nav-item" data-menuanchor="sc">
                                     <a class="nav-link active" data-toggle="tab" href="#sc" role="tab">Short Courses</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item" data-menuanchor="wsqc">
                                     <a class="nav-link" data-toggle="tab" href="#wsqc" role="tab">WSQ Courses</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item" data-menuanchor="ct">
                                     <a class="nav-link" data-toggle="tab" href="#ct" role="tab">Corporate Team Building</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item" data-menuanchor="cuc">
                                     <a class="nav-link" data-toggle="tab" href="#cuc" role="tab">Customised Courses</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item" data-menuanchor="chc">
                                     <a class="nav-link" data-toggle="tab" href="#chc" role="tab">Children's Courses</a>
                                 </li>
                             </ul>
@@ -175,6 +175,7 @@
             </div>
         </div>
     </section>
+    
 
     <script src="resources/js/jquery.min.js"></script>
     <script src="resources/js/tether.min.js"></script>
@@ -189,7 +190,7 @@
         (function($){
             $(window).on("load",function(){
                 $(".course-content").mCustomScrollbar({
-                    axis: "x"
+                    // axis: "x"
                 });
             });
         })(jQuery);

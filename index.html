@@ -31,7 +31,7 @@
                     <div class="collapse navbar-toggleable-xs" id="navbar-header">
                         <a class="navbar-brand" href="index.html"><img src="resources/images/brand-logo.png" width="150" alt="SSA Culinary"></a>
                         <ul class="nav navbar-nav pull-xs-right">
-                            <li  class="nav-item active">
+                            <li data-menuanchor="home" class="nav-item active">
                                 <a class="nav-link h2" href="#home">Home <span class="sr-only">(current)</span></a></li>
                             <li data-menuanchor="about" class="nav-item">
                                 <a class="nav-link h2" href="#about">About</a></li>
@@ -60,13 +60,21 @@
                 <div class="collapse" id="exCollapsingNavbar">
                     <div class="bg-inverse p-a-1">
                         <ul>
-                            <li class="active"><a href="index.html">Home</a></li>
+                            <!-- <li class="active"><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="courses.html">Courses</a></li>
                             <li><a href="schedule.html">Schedule</a></li>
                             <li><a href="n_e.html">News &amp; Events</a></li>
                             <li><a href="contact.html">Contact</a></li>
-                            <li><a href="#"><span><i class="fa fa-facebook-square" aria-hidden="true"></i></span></a></li>
+                            <li><a href="#"><span><i class="fa fa-facebook-square" aria-hidden="true"></i></span></a></li> -->
+
+                            <li data-menuanchor="home" class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+                            <li data-menuanchor="about"><a href="#about">About</a></li>
+                            <li data-menuanchor="courses"><a href="#courses">Courses</a></li>
+                            <li data-menuanchor="schedule"><a href="#schedule">Schedule</a></li>
+                            <li data-menuanchor="n_e"><a href="#n_e">News &amp; Events</a></li>
+                            <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+                            <li class="nav-item"><a href="#"><span><i class="fa fa-facebook-square" aria-hidden="true"></i></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -239,8 +247,8 @@
                 <div class="wrapper">
                     <div class="container">
                         <h1 class="m-b-8">Photo Gallery</h1>
-                        <div class="slide-n-e">
-                            <ul id="imageGallery" class="m-b-8">
+                        <div class="m-b-8">
+                            <ul id="imageGallery">
                                 <li data-thumb="resources/images/sample/img_1.jpg" data-src="resources/images/sample/img_1.jpg">
                                     <img src="resources/images/sample/img_1.jpg">
                                 </li>
@@ -280,7 +288,7 @@
                                 <div class="s2">
                                     <h3 class="text-white bg-secondary p-1-5 m-b-2 m-t-3 text-light-weight">Macaroon <br> Madness</h3>
                                     <p>Be the expert in producing these lovely coloured macaroons that we often see as a gift or at tea  parties..</p>
-                                    <a class="text-primary text-black-weight" href="#">Read more</a>
+                                    <a class="text-primary text-black-weight" href="courses.html">Read more</a>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -290,7 +298,7 @@
                                 <div class="s2">
                                     <h3 class="text-white bg-secondary p-1-5 m-b-2 m-t-3">Bring the latest <br> halloween trend!</h3>
                                     <p>The Halloween season marks the start of the most delicious extracurricular activity..</p>
-                                    <a class="text-primary text-black-weight" href="#">Read more</a>
+                                    <a class="text-primary text-black-weight" href="courses.html">Read more</a>
                                 </div>
                             </div>
                             <div class="col-md-4">
@@ -300,7 +308,7 @@
                                 <div class="s2">
                                     <h3 class="text-white bg-secondary p-1-5 m-b-2 m-t-3">Scream for Ice <br> Cream!</h3>
                                     <p>Icing, often called frosting in the US, is a sweet, often creamy glaze made of sugar with a liquid, such as water or milk..</p>
-                                    <a class="text-primary text-black-weight" href="#">Read more</a>
+                                    <a class="text-primary text-black-weight" href="courses.html">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -397,16 +405,15 @@
     <script src="resources/js/custom.js"></script>
     <script src="vendor/lightSlider/dist/js/lightslider.min.js"></script>
     <script src="vendor/lightGallery/dist/js/lightgallery.min.js"></script>
-    <script src="vendor/nicescroll/jquery.nicescroll.js"></script>
     <script src="vendor/customScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
     <script>
-    (function($){
-    $(window).on("load",function(){
-    $(".sched-content").mCustomScrollbar({
-    axis: "x"
-    });
-    });
-    })(jQuery);
+        (function($){
+            $(window).on("load",function(){
+                $(".sched-content").mCustomScrollbar({
+                    axis: "x"
+                });
+            });
+        })(jQuery);
     </script>
 </body>
 </html>
