@@ -17,21 +17,28 @@ var directory = {
         dist: 'dist/css',
         public: 'public/css',
         root: 'css',
+        wordpress: 'com/wp-content/themes/culinary',
     },
     js: {
         dist: 'dist/js',
         public: 'public/js',
         root: 'js',
+        wordpress: 'com/wp-content/themes/culinary/js'
     },
     img: {
         dist: 'dist/img',
         public: 'public/img',
         root: 'img',
+        wordpress: 'com/wp-content/themes/culinary/resources/images'
     },
     fonts: {
         dist: 'dist/fonts',
         public: 'public/fonts',
         root: 'fonts',
+        wordpress: 'com/wp-content/themes/culinary/resources/fonts'
+    },
+    fav: {
+        root: ''
     }
 }
 
@@ -47,6 +54,9 @@ var directory = {
 gulp.task('sass', function () {
     return sass('resources/sass/app.scss', { style: 'expanded' })
         .pipe(autoprefixer('last 2 version'))
+        .pipe(rename('style.css'))
+        .pipe(gulp.dest(directory.css.wordpress))
+        .pipe(rename('app.css'))
         .pipe(rename({suffix: '.min'}))
         .pipe(cssnano())
         .pipe(gulp.dest(directory.css.dist))
@@ -68,6 +78,7 @@ gulp.task('scripts', function () {
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest(directory.js.dist))
+        .pipe(gulp.dest(directory.js.wordpress))
         .pipe(notify({ message: 'Completed compiling JS Files' }));
 });
 
@@ -91,6 +102,7 @@ gulp.task('images', function () {
     return gulp.src(['resources/images/**/*', '!resources/images/favicon/*'])
         .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
         .pipe(gulp.dest(directory.img.root))
+        .pipe(gulp.dest(directory.img.wordpress))
         .pipe(notify({ message: 'Images optimization complete' }));
 });
 
