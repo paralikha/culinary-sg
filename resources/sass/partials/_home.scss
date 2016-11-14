@@ -203,10 +203,10 @@
         vertical-align: top;
 
         img {
-            max-width: 180px;
+            max-width: 120px;
             position: absolute;
-            top: 11px;
-            left: -25px;
+            top: 36px;
+            left: 0;
         }
     }
 
@@ -222,10 +222,6 @@
     .slick-dots {
         display: none !important;
     }
-
-    // .slide-n-e #imageGallery img {
-    //     width: 100%;
-    // }
 }
 
 // ---contact_us---

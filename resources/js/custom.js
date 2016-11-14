@@ -9,7 +9,7 @@
         anchors: ['home', 'about', 'courses', 'schedule', 'n_e', 'contactus'],
         scrollOverflow: true,
         continuousVertical: false,
-        menu: '#menu',
+        // menu: '#menu',
         navigation: false,
         navigationPosition: 'right',
         navigationTooltips: ['home', 'about', 'courses', 'schedule', 'news & events', 'contact us'],
@@ -48,6 +48,7 @@ $(document).ready(function() {
         thumbItem:9,
         slideMargin:0,
         enableDrag: false,
+        enableDrop: true,
         currentPagerPosition:'left',
         onSliderLoad: function(el) {
             el.lightGallery({
