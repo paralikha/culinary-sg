@@ -19,7 +19,7 @@
         // animate
         onLeave: function(index, nextIndex, direction) {
             if (( index == 1 || index == 2 ) && nextIndex == 3 ) { 
-                $isAnimatedSecond.addClass('animated fadeIn'); 
+                $isAnimatedSecond.addClass('animated bounceIn'); 
                 $isAnimatedSecond.eq(0).css('animation-delay', '.3s');
                 $isAnimatedSecond.eq(1).css('animation-delay', '.4s');
                 $isAnimatedSecond.eq(2).css('animation-delay', '.5s');
@@ -37,7 +37,6 @@
         }
     });
 })(jQuery);
-
 
 
 // lightSlider
