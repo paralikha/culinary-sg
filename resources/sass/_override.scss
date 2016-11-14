@@ -67,3 +67,14 @@
 #fp-nav ul li:hover a span {
     margin: 0 !important;
 }
+
+// nicescrollRail
+div#ascrail2000 {
+    z-index: 3001 !important;
+
+}
+
+div#ascrail2000 > div {
+    width: 7px !important;
+    background: rgba(0, 0, 0, 0.498039) !important;
+}
