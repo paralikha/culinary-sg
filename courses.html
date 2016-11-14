@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/customScrollbar/jquery.mCustomScrollbar.css" />
 </head>
-<body>
+<body  id="courses">
     <header class="header">
         <nav class="nav-main navbar navbar-light bg-faded">
             <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button>
@@ -25,12 +25,12 @@
                 <a class="navbar-brand" href="index.html"><img src="resources/images/brand-logo.png" width="150" alt="SSA Culinary"></a>
 
                 <ul class="nav navbar-nav pull-xs-right">
-                    <li class="nav-item"><a class="nav-link h2" href="index.html">Home <span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a class="nav-link h2" href="about.html">About</a></li>
-                    <li class="nav-item active"><a class="nav-link h2" href="courses.html">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link h2" href="schedule.html">Schedule</a></li>
-                    <li class="nav-item"><a class="nav-link h2" href="n_e.html">News &amp; Events</a></li>
-                    <li class="nav-item"><a class="nav-link h2" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link h2" href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link h2" href="index.html#about">About</a></li>
+                    <li class="nav-item active"><a class="nav-link h2" href="index.html#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link h2" href="index.html#schedule">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link h2" href"index.html#n_e">News &amp; Events</a></li>
+                    <li class="nav-item"><a class="nav-link h2" href="index.html#contactus">Contact</a></li>
                     <li class="nav-item"><a href="#"><span><i class="fa fa-facebook-square" aria-hidden="true"></i></span></a></li>
                 </ul>
             </div>
@@ -48,42 +48,30 @@
             <div class="bg-inverse p-a-1">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li class="active"><a href="courses.html">Courses</a></li>
-                    <li><a href="schedule.html">Schedule</a></li>
-                    <li><a href="n_e.html">News &amp; Events</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li class="active"><a href="index.html#courses">Courses</a></li>
+                    <li><a href="index.html#schedule">Schedule</a></li>
+                    <li><a href="index.html#n_e">News &amp; Events</a></li>
+                    <li><a href="index.html#conactus">Contact</a></li>
                     <li><a href="#"><span><i class="fa fa-facebook-square" aria-hidden="true"></i></span></a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="section text-center" id="courses">
+    <section class="section wrapper courses text-center">
         <div class="container">
             <div class="bg-white">
-                <div class="block -bg-dark edge_top">
-                    <h2 class="text-white">Courses</h2>
-                </div>
+                <div class="block -bg-dark edge_top"><h2 class="text-white">Courses</h2></div>
                 <div class="row">
                     <div class="col-md-3">
                         <div class="bx-tab text-left">
                             <ul class="nav m-b-5 nav-tabs" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#sc" role="tab">Short Courses</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#wsqc" role="tab">WSQ Courses</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#ct" role="tab">Corporate Team Building</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#cuc" role="tab">Customised Courses</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#chc" role="tab">Children's Courses</a>
-                                </li>
+                                <li class="nav-item" data-menuanchor="sc"><a class="nav-link active" data-toggle="tab" href="#sc" role="tab">Short Courses</a></li>
+                                <li class="nav-item" data-menuanchor="wsqc"><a class="nav-link" data-toggle="tab" href="#wsqc" role="tab">WSQ Courses</a></li>
+                                <li class="nav-item" data-menuanchor="ct"><a class="nav-link" data-toggle="tab" href="#ct" role="tab">Corporate Team Building</a></li>
+                                <li class="nav-item" data-menuanchor="cuc"><a class="nav-link" data-toggle="tab" href="#cuc" role="tab">Customised Courses</a></li>
+                                <li class="nav-item" data-menuanchor="chc"><a class="nav-link" data-toggle="tab" href="#chc" role="tab">Children's Courses</a></li>
                             </ul>
                         </div>
                     </div>
@@ -157,16 +145,16 @@
                                     </div>
                                 </div>
                                 <div class="tab-pane" id="wsqc" role="tabpanel">
-                                    <p>wsqc - tba</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ducimus nobis ea incidunt, minus, vero? Illo veniam recusandae repellat non nemo, eaque, consequatur dolorum vel sit fugit laudantium voluptatem sequi.</p>
                                 </div>
                                 <div class="tab-pane" id="ct" role="tabpanel">
-                                    <p>ct - tba</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita ex eos nihil optio esse ratione placeat eius fugiat omnis, dignissimos laborum cumque porro inventore illo iusto accusantium soluta reprehenderit magnam.</p>
                                 </div>
                                 <div class="tab-pane" id="cuc" role="tabpanel">
-                                    <p>cuc - tba</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit a iste qui similique hic quia reiciendis architecto totam expedita minus! Harum eaque sapiente maiores laboriosam accusamus error beatae necessitatibus voluptatum.</p>
                                 </div>
                                 <div class="tab-pane" id="chc" role="tabpanel">
-                                    <p>chc - tba</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae magni ducimus atque sed incidunt quam libero quo, impedit, ullam repellendus fugiat sapiente tenetur nam minima at nisi illo quae, rerum?</p>
                                 </div>
                             </div>
                         </div>
@@ -181,11 +169,22 @@
     <script src="resources/js/bootstrap.min.js"></script>
     <script src="resources/js/modernizr-2.6.2.min.js"></script>
     <script src="vendor/tether/dist/js/tether.min.js"></script>
-    <script src="resources/js/custom.js"></script>
+    <!-- <script src="resources/js/custom.js"></script> -->
     <script src="vendor/nicescroll/jquery.nicescroll.js"></script>
     <script src="vendor/customScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <script>
+        //niceScroll
+        $(document).ready(function () {
+            $("html").niceScroll({
+                cursorborder: "0",
+                autohidemode: false,
+                cursorminheight: 30
+            });
+            $('#ascrail2000').show(); 
+        });
+
+        // g&y scrollbar
         (function($){
             $(window).on("load",function(){
                 $(".course-content").mCustomScrollbar({
