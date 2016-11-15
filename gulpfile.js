@@ -52,6 +52,11 @@ var directory = {
 |
 */
 gulp.task('sass', function () {
+    sass('resources/sass/editor-style.scss', {style: 'expanded'})
+        .pipe(autoprefixer('last 2 version'))
+        .pipe(gulp.dest(directory.css.wordpress))
+        .pipe(notify({ message: 'Completed compiling Editor SASS Files' }));
+
     return sass('resources/sass/app.scss', { style: 'expanded' })
         .pipe(autoprefixer('last 2 version'))
         .pipe(rename('style.css'))

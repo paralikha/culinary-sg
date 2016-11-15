@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/inc/bs4navwalker/bs4navwalker.php';
-include get_template_directory() . "/inc/globals.php";
+include_once get_template_directory() . "/inc/globals.php";
 
 /**
  * Features
@@ -9,7 +9,11 @@ include get_template_directory() . "/inc/globals.php";
  */
 if (function_exists('add_theme_support'))
 {
+    // Add Menu
     add_theme_support('menus');
+
+    // Add Title
+    add_theme_support('title-tag');
 
     // Add Thumbnail Theme Support
     add_theme_support('post-thumbnails');
@@ -151,8 +155,8 @@ add_action('init', 'the_register_nav_menus');
 function the_register_nav_menus()
 {
     register_nav_menus(array(
+        'main-menu'     => __('Main Menu', THE_TEXT_DOMAIN),
         'landing-menu' 	=> __('Landing Page Menu', THE_TEXT_DOMAIN),
-        'main-menu' 	=> __('Main Menu', THE_TEXT_DOMAIN),
         'mobile-menu'   => __('Mobile Menu', THE_TEXT_DOMAIN),
         'social-menu' 	=> __('Social Menu', THE_TEXT_DOMAIN),
         'footer-menu' 	=> __('Footer Menu', THE_TEXT_DOMAIN),
@@ -283,11 +287,13 @@ function the_print_favicons()
 {
     ?>
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/favicons/apple-touch-icon.png?v=<?php echo THE_VERSION; ?>">
-    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon-32x32.png?v=<?php echo THE_VERSION; ?>" sizes="32x32">
-    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicons/favicon-16x16.png?v=<?php echo THE_VERSION; ?>" sizes="16x16">
-    <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/favicons/manifest.json?v=<?php echo THE_VERSION; ?>">
-    <link rel="mask-icon" href="<?php echo get_template_directory_uri(); ?>/favicons/safari-pinned-tab.svg?v=<?php echo THE_VERSION; ?>" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_site_url() ?>/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="<?php echo get_site_url() ?>/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="<?php echo get_site_url() ?>/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="<?php echo get_site_url() ?>/manifest.json">
+    <link rel="mask-icon" href="<?php echo get_site_url() ?>/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="<?php echo get_site_url() ?>/favicon.ico">
+    <meta name="msapplication-config" content="<?php echo get_site_url() ?>/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <!-- /Favicons -->
     <?php
