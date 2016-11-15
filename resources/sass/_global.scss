@@ -169,3 +169,10 @@ body {
 .d-inline {
     display: inline-block !important;
 }
+
+// flex gridbox
+.flex-grid {
+    justify-content: center !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
