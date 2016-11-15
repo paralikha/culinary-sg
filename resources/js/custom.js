@@ -31,22 +31,3 @@
         }
     });
 })(jQuery);
-
-
-// lightSlider
-$(document).ready(function() {
-    $('#imageGallery').lightSlider({
-        gallery:true,
-        item:3,
-        loop:false,
-        thumbItem:9,
-        slideMargin:0,
-        enableDrag: false,
-        currentPagerPosition:'left',
-        onSliderLoad: function(el) {
-            el.lightGallery({
-                selector: '#imageGallery .lslide'
-            });
-        }
-    }); 
-});
