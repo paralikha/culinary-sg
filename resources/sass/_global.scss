@@ -16,8 +16,8 @@ input[type="text"]:focus {
 
 :before, :after {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-        box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 ::-webkit-scrollbar {
@@ -50,25 +50,25 @@ input[type="text"]:focus {
 
 * {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html, body {
     -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
+       -moz-transition: 0.4s;
+         -o-transition: 0.4s;
+            transition: 0.4s;
 }
 
 body {
     font-family: $secondary-font-family;
     color: $dark-gray;
     -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
+       -moz-transition: 0.4s;
+         -o-transition: 0.4s;
+            transition: 0.4s;
 }
 
 .wrapper {
@@ -78,9 +78,9 @@ body {
 
 .container {
     -webkit-transition: 0.4s;
-    -moz-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
+       -moz-transition: 0.4s;
+         -o-transition: 0.4s;
+            transition: 0.4s;
 }
 
 .text-center {
