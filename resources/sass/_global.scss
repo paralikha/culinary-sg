@@ -55,6 +55,7 @@ input[type="text"]:focus {
 }
 
 html, body {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -o-transition: 0.4s;
