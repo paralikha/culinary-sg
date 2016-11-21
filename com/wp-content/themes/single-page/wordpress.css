@@ -1,0 +1,80 @@
+.alignleft {
+	float: left;
+	margin-right: 1rem;
+}
+
+.alignright {
+	float: right;
+	margin-left: 1rem;
+}
+
+.wp-caption .wp-caption-text {
+	text-align: center;
+	font-size: 14px;
+}
+
+#navbar-header .nav-link {
+	font-size: 20px;
+}
+
+.nf-before-form-content .nf-form-fields-required {
+	display: none;
+}
+
+.ninja-forms-field:not(.btn) {
+	background-color: #F8BA37 !important;
+	border: none !important;
+	border-radius: 0 !important;
+}
+
+.ninja-forms-field:placeholder {
+	color: #fff !important;
+}
+
+::-webkit-input-placeholder {
+   color: #ffffff !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #ffffff !important;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #ffffff !important;
+}
+
+:-ms-input-placeholder {
+   color: #ffffff !important;
+}
+
+#nf-field-1-container,
+#nf-field-2-container,
+#nf-field-5-container {
+	width: 65%;
+}
+#nf-field-4-container {
+	margin-bottom: 0;
+}
+
+#nf-form-1-cont .nf-form-content {
+	background-image: url('resources/images/contact-img.png');
+	background-repeat: no-repeat;
+	background-size: 128px auto;
+	background-position: top right;
+}
+
+.blog-single-metadata {
+	margin-bottom: 3rem;
+}
+
+.container-fluid-8 {
+	padding-left: 8rem;
+	padding-right: 8rem;
+}
+
+.search-list .search-list-item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}

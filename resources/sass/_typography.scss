@@ -64,11 +64,18 @@ p {
 	font-size: $font-size-p;
 }
 
-.header-text {
+.header-text,
+.header-text h1,
+.header-text h2
+.header-text h3
+.header-text h4
+.header-text h5
+.header-text h6 {
 	font-family: $header-font-family;
 	text-transform: none;
 	font-size: 7rem;
 	color: $dark-color;
+	line-height: 1;
 
 	span {
 		font-size: 5rem;

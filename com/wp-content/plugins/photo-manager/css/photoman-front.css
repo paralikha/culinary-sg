@@ -1,0 +1,8 @@
+.photogal .item {
+	display: inline-block;
+	margin: 10px;
+}
+
+.image-selector {
+	cursor: pointer;
+}

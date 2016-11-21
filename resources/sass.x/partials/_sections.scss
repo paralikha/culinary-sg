@@ -1,0 +1,13 @@
+.section {
+	&-special {
+		h3 {
+			@extend .r-p-bg;
+			@extend .m-b-2;
+			color: white;
+			clear: both;
+			+ p {
+				margin-bottom: 70px;
+			}
+		}
+	}
+}

@@ -1,0 +1,1 @@
+<input type="hidden" name="<?php $global['nonce'] ?>" id="<?php $global['nonce'] ?>" value="<?php echo wp_create_nonce( plugin_basename(__FILE__) ); ?>">

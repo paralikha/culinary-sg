@@ -1,15 +1,16 @@
 #courses {
-    background-image: url("../../resources/images/bg-about.png");
+    // background-image: url("resources/images/bg-about.png");
     background-size: cover;
     background-repeat: no-repeat !important;
-    background-position: top center;
+    // background-position: top center;
     background-attachment: fixed;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    // height: 100vh;
+    // overflow: hidden;
     position: relative;
     transition: 0.4s;
-    
+    overflow-x: hidden;
+
     // tabs
     .tabs-left {
         border-bottom: none;
@@ -41,12 +42,12 @@
         margin-right: 0;
         display:block;
     }
-    
+
     // bg-edge
     .edge_top_relative p {
         margin-bottom: 0;
         color: $white;
-        font-weight: 700; 
+        font-weight: 700;
     }
 
     .edge_top {
@@ -54,7 +55,7 @@
         z-index: 1;
         top: -20px;
         left: -40px;
-        padding: 10px 30px; 
+        padding: 10px 30px;
     }
 
     .edge_top:before {
@@ -66,7 +67,7 @@
         position: absolute;
         right: 0;
         z-index: -1;
-        -webkit-backface-visibility: hidden; 
+        -webkit-backface-visibility: hidden;
     }
 
     .edge_top:before {
@@ -74,12 +75,12 @@
         -webkit-transform: skewY(3.5deg);
         transform: skewY(3.5deg);
         -webkit-transform-origin: 100% 0;
-        transform-origin: 100% 0; 
+        transform-origin: 100% 0;
     }
 
     .edge_top_relative {
         position: relative;
-        z-index: 1; 
+        z-index: 1;
     }
 
     .edge_top_relative:before {
@@ -91,7 +92,7 @@
         position: absolute;
         right: 0;
         z-index: -1;
-        -webkit-backface-visibility: hidden; 
+        -webkit-backface-visibility: hidden;
     }
 
     .edge_top_relative:before {
@@ -99,7 +100,7 @@
         -webkit-transform: skewY(3.5deg);
         transform: skewY(3.5deg);
         -webkit-transform-origin: 100% 0;
-        transform-origin: 100% 0; 
+        transform-origin: 100% 0;
     }
 
     .-bg-dark {
@@ -147,7 +148,7 @@
     }
 }
 
-// seperated style on courses
+// seperated styles on courses
 .bg-white {
     padding: 70px 40px;
     background: $white;
@@ -157,11 +158,15 @@
     -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
        -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
             box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
-    
+
     // tab
     .bx-tab {
         position: relative;
         min-height: 500px;
+
+        ul li a {
+            display: block !important;
+        }
     }
 
     .nav-tabs {
@@ -172,10 +177,10 @@
             margin-bottom: 10px;
         }
 
-        .nav-link.active, .nav-tabs .nav-link.active:focus, 
-        .nav-tabs .nav-link.active:hover, 
-        .nav-tabs .nav-item.open .nav-link, 
-        .nav-tabs .nav-item.open .nav-link:focus, 
+        .nav-link.active, .nav-tabs .nav-link.active:focus,
+        .nav-tabs .nav-link.active:hover,
+        .nav-tabs .nav-item.open .nav-link,
+        .nav-tabs .nav-item.open .nav-link:focus,
         .nav-tabs .nav-item.open .nav-link:hover {
             background-color: transparent;
             border-color: transparent;
@@ -203,4 +208,8 @@
             }
         }
     }
+}
+
+section.wrapper.courses {
+    padding-top: 11rem;
 }

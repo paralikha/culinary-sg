@@ -17,25 +17,25 @@ var directory = {
         dist: 'dist/css',
         public: 'public/css',
         root: 'css',
-        wordpress: 'com/wp-content/themes/culinary',
+        wordpress: 'com/wp-content/themes/single-page',
     },
     js: {
         dist: 'dist/js',
         public: 'public/js',
         root: 'js',
-        wordpress: 'com/wp-content/themes/culinary/js'
+        wordpress: 'com/wp-content/themes/single-page/js'
     },
     img: {
         dist: 'dist/img',
         public: 'public/img',
         root: 'img',
-        wordpress: 'com/wp-content/themes/culinary/resources/images'
+        wordpress: 'com/wp-content/themes/single-page/resources/images'
     },
     fonts: {
         dist: 'dist/fonts',
         public: 'public/fonts',
         root: 'fonts',
-        wordpress: 'com/wp-content/themes/culinary/resources/fonts'
+        wordpress: 'com/wp-content/themes/single-page/resources/fonts'
     },
     fav: {
         root: ''

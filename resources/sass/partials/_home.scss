@@ -1,18 +1,16 @@
 // ---home---
-#h-home {
-    background-image: url("../../resources/images/bg-home.png");
-    -webkit-background-size: 1600px;
-    -moz-background-size: 1600px;
-    -o-background-size: 1600px;
-    background-size: 1600px;
-    background-repeat: no-repeat !important;
-    background-position: bottom center !important;
-    width: 100%;
-    height: 90vh;
+#h-home,
+#home {
+    background-image: url("resources/images/bg-home.png");
+    -webkit-background-size: 1366px;
+    -moz-background-size: 1366px;
+    -o-background-size: 1366px;
+    background-size: 1366px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
     overflow: hidden;
     position: relative;
     transition: 0.4s;
-    opacity: 1;
 
     img {
         max-width: 100%;
@@ -26,7 +24,7 @@
 
     .title-text {
         position: absolute;
-        top: 35%;
+        top: 50%;
         left: 25%;
         transform: translate(-25%, -25%);
         z-index: 1000;
@@ -53,24 +51,21 @@
             padding: 10px 25px;
             font-family: $nav-font-family;
             display: inline;
-        } 
+        }
     }
-    
+
 }
 
 // ---about---
-#h-about {  
-    background-image: url("../../resources/images/bg-about.png");
-    // background-color: #fff;
+#h-about,
+#about {
+    background-image: url("resources/images/bg-about.png");
     background-size: cover;
-    background-repeat: no-repeat !important;
+    background-repeat: no-repeat;
     background-position: top center;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
     position: relative;
     transition: 0.4s;
-    // background-attachment: fixed;
 
     .icon {
         display: table-cell;
@@ -91,9 +86,9 @@
 }
 
 .r-p-bg {
-	padding-top: 15px;
+    padding-top: 15px;
     padding-bottom: 15px;
-    background-image: url("../../resources/images/rolling-pin.png");
+    background-image: url("resources/images/rolling-pin.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -101,31 +96,24 @@
 }
 
 .b-img {
-	padding: 0;
+    padding: 0;
     list-style: none;
 
     li {
-    	display: inline-block;
-    	margin-right: 50px;
-		margin-bottom: 30px;
+        display: inline-block;
+        margin-right: 50px;
+        margin-bottom: 30px;
     }
 
     li:nth-child(2) {
-    	margin-bottom: 0;
+        margin-bottom: 0;
     }
 }
 
 // ---courses---
-#h-courses {
+#h-courses,
+#courses {
     background-color: $white;
-    background-position: top center;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    transition: .4s;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 
     .circle-icon {
         width: 100%;
@@ -133,81 +121,80 @@
     }
 
     .courses-features {
-	    padding: 0;
-	    list-style: none;
+        padding: 0;
+        list-style: none;
 
-	    li {
-		    display: inline-block;
-		    width: 33%;
-		}
-	}
+        li {
+            display: inline-block;
+            width: 33%;
+        }
+    }
 }
 
 // ---schedule---
-#h-schedule {
-	background-image: url("../../resources/images/bg-sched.png");
+#h-schedule,
+#schedule,
+#h-schedules,
+#schedules {
+    background-image: url("resources/images/bg-sched.png");
     background-size: cover;
     background-position: center center;
     transition: 0.4s;
     background-repeat: no-repeat;
 
     .sched-content {
-	    position: relative;
-	    display: block;
-	    height: 600px;
-	    overflow-x: hidden;
-	    overflow: auto;
-	    width: 100%;
+        position: relative;
+        display: block;
+        height: 600px;
+        overflow-x: hidden;
+        overflow: auto;
+        width: 100%;
 
-	    article {
-	    	margin-bottom: 10px;
-	    	margin-right: 10px;
-	    	margin-left: 10px;
-    		background: $light-color;
-    		padding: 20px;
-    		-webkit-transition: background-color .5s ease;
-    		   -moz-transition: background-color .5s ease;
-    				transition: background-color .5s ease;
+        article {
+            margin-bottom: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            background: $light-color;
+            padding: 20px;
+            -webkit-transition: background-color .5s ease;
+               -moz-transition: background-color .5s ease;
+                    transition: background-color .5s ease;
 
-    		p {
-    			margin-bottom: 3px;
-    		}
+            p {
+                margin-bottom: 3px;
+            }
 
-    		.column {
-    			p:first-child {
-					width: 430px;
-    			}
+            .column {
+                p:first-child {
+                    width: 430px;
+                }
 
-    			p {
-    				display: table-cell;
-				    width: 110px;
-				    vertical-align: top;
-    			}
-    		}
-	    }
+                p {
+                    display: table-cell;
+                    width: 110px;
+                    vertical-align: top;
+                }
+            }
+        }
 
-	    article:last-child {
-	    	margin-bottom: 0;
-	    }
+        article:last-child {
+            margin-bottom: 0;
+        }
 
-	    article:hover {
-	    	background: $primary-color;
-	    	-webkit-transition: background-color .5s ease;
-    		   -moz-transition: background-color .5s ease;
-    				transition: background-color .5s ease;
-	    }
-	}
+        article:hover {
+            background: $primary-color;
+            -webkit-transition: background-color .5s ease;
+               -moz-transition: background-color .5s ease;
+                    transition: background-color .5s ease;
+        }
+    }
 }
 
 // ---news_events---
-#h-n_e {
-	background-color: $white;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    transition: 0.4s;
-    background-attachment: fixed;
+#h-n_e,
+#news-events,
+#h-news-events {
+    background-color: $white;
 
     .slick-slide {
         margin-right: 2px;
@@ -224,10 +211,10 @@
         vertical-align: top;
 
         img {
-            max-width: 180px;
+            max-width: 120px;
             position: absolute;
-            top: 11px;
-            left: -25px;
+            top: 36px;
+            left: 0;
         }
     }
 
@@ -243,20 +230,16 @@
     .slick-dots {
         display: none !important;
     }
-
-    .slide-n-e #imageGallery img {
-        width: 100%;
-    }
 }
 
 // ---contact_us---
+#h-contact,
 #contact {
-    background-image: url("../../resources/images/bg-contact.png");
+    background-image: url("resources/images/bg-contact.png");
     background-size: cover;
     background-position: center center;
     transition: .4s;
     background-repeat: no-repeat;
-    min-height: 100vh;
 
     .icon {
         display: table-cell;
@@ -309,7 +292,7 @@
         border: none;
         border-radius: 0;
         display: inline;
-        
+
         &:focus {
             outline: 0;
         }

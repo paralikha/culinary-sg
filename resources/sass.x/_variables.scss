@@ -1,0 +1,39 @@
+@font-face {
+	font-family: "delicious";
+	src: url('../../resources/fonts/delicious/delicious-heavy.woff') format('woff');
+}
+
+@font-face {
+    font-family: "nightingale";
+    src: url('../../resources/fonts/nightingale/Nightingale_Sample.eot');
+    src: url('../../resources/fonts/nightingale/Nightingale_Sample.eot') format('eot'),
+    	 url('../../resources/fonts/nightingale/Nightingale_Sample.woff') format('woff'),
+    	 url('../../resources/fonts/nightingale/Nightingale_Sample.otf') format('otf'),
+         url('../../resources/fonts/nightingale/Nightingale_Sample.ttf') format('truetype');
+}
+
+$primary-font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+$secondary-font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+$nav-font-family: "delicious", Arial, Helvetica, sans-serif;
+$header-font-family: "nightingale", Arial, Helvetica, sans-serif;
+
+$primary: #F8BA37;
+$secondary: #5D5E5E;
+$darker-gray: #333333;
+$dark-gray: #304042;
+$light-gray: #B6B6B7;
+$white: #ffffff;
+
+$primary-color: $primary;
+$secondary-color: $secondary;
+$dark-color: $dark-gray;
+$darker-color: $darker-gray;
+$light-color: $light-gray;
+
+$font-size-h1: 40px;
+$font-size-h2: 20px;
+$font-size-h3: 16px;
+$font-size-h4: 14px;
+$font-size-h5: 12px;
+$font-size-h6: 10px;
+$font-size-p:  16px;

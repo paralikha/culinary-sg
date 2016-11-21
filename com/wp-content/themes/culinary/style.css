@@ -6119,7 +6119,7 @@ a.bg-danger:focus, a.bg-danger:hover {
   margin-right: 1.5rem !important;
 }
 
-.m-b-2 {
+.m-b-2, .section-special h3 {
   margin-bottom: 1.5rem !important;
 }
 
@@ -6662,7 +6662,7 @@ body {
   margin-bottom: 10px;
 }
 
-.m-b-2 {
+.m-b-2, .section-special h3 {
   margin-bottom: 20px;
 }
 
@@ -6825,6 +6825,10 @@ p {
   font-weight: 900;
 }
 
+.section-special h3 {
+  color: white;
+}
+
 header {
   transition: all 0.4s ease;
 }
@@ -6985,7 +6989,7 @@ header.sticky ul li a span {
   vertical-align: middle;
 }
 
-.r-p-bg {
+.r-p-bg, .section-special h3 {
   padding-top: 15px;
   padding-bottom: 15px;
   background-image: url("../../resources/images/rolling-pin.png");

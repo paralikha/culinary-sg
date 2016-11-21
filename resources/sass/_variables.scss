@@ -1,15 +1,15 @@
 @font-face {
 	font-family: "delicious";
-	src: url('../../resources/fonts/delicious/delicious-heavy.woff') format('woff');
+	src: url('resources/fonts/delicious/delicious-heavy.woff') format('woff');
 }
 
 @font-face {
     font-family: "nightingale";
-    src: url('../../resources/fonts/nightingale/Nightingale_Sample.eot');
-    src: url('../../resources/fonts/nightingale/Nightingale_Sample.eot') format('eot'),
-    	 url('../../resources/fonts/nightingale/Nightingale_Sample.woff') format('woff'),
-    	 url('../../resources/fonts/nightingale/Nightingale_Sample.otf') format('otf'),
-         url('../../resources/fonts/nightingale/Nightingale_Sample.ttf') format('truetype');
+    src: url('resources/fonts/nightingale/Nightingale_Sample.eot');
+    src: url('resources/fonts/nightingale/Nightingale_Sample.eot') format('eot'),
+    	 url('resources/fonts/nightingale/Nightingale_Sample.woff') format('woff'),
+    	 url('resources/fonts/nightingale/Nightingale_Sample.otf') format('otf'),
+         url('resources/fonts/nightingale/Nightingale_Sample.ttf') format('truetype');
 }
 
 $primary-font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
@@ -36,4 +36,4 @@ $font-size-h3: 16px;
 $font-size-h4: 14px;
 $font-size-h5: 12px;
 $font-size-h6: 10px;
-$font-size-p:  16px;
+$font-size-p: 16px;

@@ -1,0 +1,318 @@
+// ---home---
+#h-home {
+    background-image: url("../../resources/images/bg-home.png");
+    -webkit-background-size: 1600px;
+    -moz-background-size: 1600px;
+    -o-background-size: 1600px;
+    background-size: 1600px;
+    background-repeat: no-repeat !important;
+    background-position: bottom center !important;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+    opacity: 1;
+
+    img {
+        max-width: 100%;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .title-text {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+        transform: translate(-25%, -25%);
+        z-index: 1000;
+
+        h1 {
+            font-size: 7rem;
+            color: #000;
+            margin-bottom: -10px;
+
+            span {
+                color: #000;
+                font-size: 3rem;
+            }
+        }
+
+        h1:nth-child(2) {
+            margin-bottom: 40px;
+        }
+
+        .btn-enroll {
+            color: $primary;
+            background-color: $dark-color;
+            border-radius: 10px;
+            padding: 10px 25px;
+            font-family: $nav-font-family;
+            display: inline;
+        } 
+    }
+    
+}
+
+// ---about---
+#h-about {  
+    background-image: url("../../resources/images/bg-about.png");
+    // background-color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+    // background-attachment: fixed;
+
+    .icon {
+        display: table-cell;
+        width: 20%;
+        font-size: 100%;
+        vertical-align: top;
+
+        img {
+            width: 130px;
+        }
+    }
+
+    .content {
+        display: table-cell;
+        padding: 0 0 0 15px;
+        vertical-align: middle;
+    }
+}
+
+.r-p-bg {
+	padding-top: 15px;
+    padding-bottom: 15px;
+    background-image: url("../../resources/images/rolling-pin.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-width: 350px;
+}
+
+.b-img {
+	padding: 0;
+    list-style: none;
+
+    li {
+    	display: inline-block;
+    	margin-right: 50px;
+		margin-bottom: 30px;
+    }
+
+    li:nth-child(2) {
+    	margin-bottom: 0;
+    }
+}
+
+// ---courses---
+#h-courses {
+    background-color: $white;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: .4s;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    .circle-icon {
+        width: 100%;
+        max-width: 160px;
+    }
+
+    .courses-features {
+	    padding: 0;
+	    list-style: none;
+
+	    li {
+		    display: inline-block;
+		    width: 33%;
+		}
+	}
+}
+
+// ---schedule---
+#h-schedule {
+	background-image: url("../../resources/images/bg-sched.png");
+    background-size: cover;
+    background-position: center center;
+    transition: 0.4s;
+    background-repeat: no-repeat;
+
+    .sched-content {
+	    position: relative;
+	    display: block;
+	    height: 600px;
+	    overflow-x: hidden;
+	    overflow: auto;
+	    width: 100%;
+
+	    article {
+	    	margin-bottom: 10px;
+	    	margin-right: 10px;
+	    	margin-left: 10px;
+    		background: $light-color;
+    		padding: 20px;
+    		-webkit-transition: background-color .5s ease;
+    		   -moz-transition: background-color .5s ease;
+    				transition: background-color .5s ease;
+
+    		p {
+    			margin-bottom: 3px;
+    		}
+
+    		.column {
+    			p:first-child {
+					width: 430px;
+    			}
+
+    			p {
+    				display: table-cell;
+				    width: 110px;
+				    vertical-align: top;
+    			}
+    		}
+	    }
+
+	    article:last-child {
+	    	margin-bottom: 0;
+	    }
+
+	    article:hover {
+	    	background: $primary-color;
+	    	-webkit-transition: background-color .5s ease;
+    		   -moz-transition: background-color .5s ease;
+    				transition: background-color .5s ease;
+	    }
+	}
+}
+
+// ---news_events---
+#h-n_e {
+	background-color: $white;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+    background-attachment: fixed;
+
+    .slick-slide {
+        margin-right: 2px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .s1 {
+        display: table-cell;
+        width: 60px;
+        font-size: 100%;
+        vertical-align: top;
+
+        img {
+            max-width: 180px;
+            position: absolute;
+            top: 11px;
+            left: -25px;
+        }
+    }
+
+    .s2 {
+        display: table-cell;
+        padding: 0 0 0 20px;
+    }
+
+    .slide-n-e {
+        margin: 0 10px !important;
+    }
+
+    .slick-dots {
+        display: none !important;
+    }
+
+    .slide-n-e #imageGallery img {
+        width: 100%;
+    }
+}
+
+// ---contact_us---
+#contact {
+    background-image: url("../../resources/images/bg-contact.png");
+    background-size: cover;
+    background-position: center center;
+    transition: .4s;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    .icon {
+        display: table-cell;
+        width: 7%;
+        font-size: 100%;
+        vertical-align: top;
+
+        img {
+            width: 25px;
+        }
+    }
+
+    .content {
+        display: table-cell;
+        padding: 0 0 0 15px;
+
+        p {
+            font-size: 14px;
+            color: $primary-color;
+
+            span {
+                color: $white;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .contact-form {
+        background: rgba(182, 182, 183, 0.75);
+        padding: 50px;
+        border-radius: 40px;
+    }
+
+    p {
+        color: $white;
+
+        span {
+            color: $primary;
+        }
+    }
+
+    .img-c-c {
+        width: 127px;
+        max-width: 100%;
+    }
+
+    .btn-contact {
+        background: #000;
+        border: none;
+        border-radius: 0;
+        display: inline;
+        
+        &:focus {
+            outline: 0;
+        }
+    }
+}
+

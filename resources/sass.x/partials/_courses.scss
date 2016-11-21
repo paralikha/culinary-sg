@@ -1,0 +1,206 @@
+#courses {
+    background-image: url("../../resources/images/bg-about.png");
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-position: top center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+    
+    // tabs
+    .tabs-left {
+        border-bottom: none;
+        padding-top: 2px;
+    }
+
+    .tabs-left {
+        border-right: 1px solid #ddd;
+    }
+
+    .tabs-left>li {
+        float: none;
+        margin-bottom: 2px;
+    }
+
+    .tabs-left>li {
+        margin-right: -1px;
+    }
+
+    .tabs-left>li.active>a,
+    .tabs-left>li.active>a:hover,
+    .tabs-left>li.active>a:focus {
+        border-bottom-color: #ddd;
+        border-right-color: transparent;
+    }
+
+    .tabs-left>li>a {
+        border-radius: 4px 0 0 4px;
+        margin-right: 0;
+        display:block;
+    }
+    
+    // bg-edge
+    .edge_top_relative p {
+        margin-bottom: 0;
+        color: $white;
+        font-weight: 700; 
+    }
+
+    .edge_top {
+        position: absolute;
+        z-index: 1;
+        top: -20px;
+        left: -40px;
+        padding: 10px 30px; 
+    }
+
+    .edge_top:before {
+        background: inherit;
+        content: '';
+        display: block;
+        height: 50%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        -webkit-backface-visibility: hidden; 
+    }
+
+    .edge_top:before {
+        top: 0;
+        -webkit-transform: skewY(3.5deg);
+        transform: skewY(3.5deg);
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0; 
+    }
+
+    .edge_top_relative {
+        position: relative;
+        z-index: 1; 
+    }
+
+    .edge_top_relative:before {
+        background: inherit;
+        content: '';
+        display: block;
+        height: 50%;
+        left: 0;
+        position: absolute;
+        right: 0;
+        z-index: -1;
+        -webkit-backface-visibility: hidden; 
+    }
+
+    .edge_top_relative:before {
+        top: 0;
+        -webkit-transform: skewY(3.5deg);
+        transform: skewY(3.5deg);
+        -webkit-transform-origin: 100% 0;
+        transform-origin: 100% 0; 
+    }
+
+    .-bg-dark {
+        background: $dark-gray;
+    }
+
+    .course-content {
+        position: relative;
+        display: block;
+        height: 400px;
+        overflow-x: hidden;
+        overflow: auto;
+        width: 100%;
+
+        article {
+            margin-bottom: 10px;
+            margin-right: 10px;
+            margin-left: 10px;
+            padding: 20px;
+            -webkit-transition: background-color .5s ease;
+               -moz-transition: background-color .5s ease;
+                    transition: background-color .5s ease;
+
+            p {
+                margin-bottom: 3px;
+
+                span {
+                    font-weight: 900;
+                }
+            }
+        }
+
+        article:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .c-r-img img {
+        width: 210px;
+        max-width: 100%;
+    }
+
+    .tab-content ul {
+        list-style-type: square !important;
+    }
+}
+
+// seperated style on courses
+.bg-white {
+    padding: 70px 40px;
+    background: $white;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
+       -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.35);
+    
+    // tab
+    .bx-tab {
+        position: relative;
+        min-height: 500px;
+    }
+
+    .nav-tabs {
+        border-bottom: none;
+
+        .nav-item {
+            float: none !important;
+            margin-bottom: 10px;
+        }
+
+        .nav-link.active, .nav-tabs .nav-link.active:focus, 
+        .nav-tabs .nav-link.active:hover, 
+        .nav-tabs .nav-item.open .nav-link, 
+        .nav-tabs .nav-item.open .nav-link:focus, 
+        .nav-tabs .nav-item.open .nav-link:hover {
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        .nav-link.active {
+            border-bottom: 4px solid $primary;
+            display: inline-block;
+            font-weight: 900;
+        }
+
+        .nav-link {
+            display: inherit;
+            border: none;
+        }
+
+        .nav-item a {
+            padding-left: 0;
+            padding-right: 0;
+            text-transform: uppercase;
+
+            &:hover {
+                color: $dark-color;
+                font-weight: 900;
+            }
+        }
+    }
+}

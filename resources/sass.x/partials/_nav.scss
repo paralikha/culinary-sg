@@ -1,0 +1,106 @@
+header {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+
+    .navbar {
+        position: relative;
+        padding: 1rem 8rem;
+    }
+
+    .nav-main {
+        background-color: transparent !important;
+
+        ul {
+            position: relative;
+            display: block;
+            margin-top: 20px;
+
+            li {
+                margin-right: 3rem;
+
+                a {
+                    margin-bottom: 0 !important;
+                    font-family: $nav-font-family !important;
+                    color: $darker-color !important;
+                    -webkit-transition: background-color .5s ease;
+		               -moz-transition: background-color .5s ease;
+                    		transition: background-color .5s ease;
+                }
+            }
+
+            li:last-child {
+                margin-top: 5px;
+                margin-right: 0;
+            }
+
+            li.nav-item.active a,
+            li.nav-item a:hover {
+                color: $primary-color !important;
+                -webkit-transition: background-color .5s ease;
+	               -moz-transition: background-color .5s ease;
+                		transition: background-color .5s ease;
+            }
+        }
+    }
+}
+
+.bg-faded {
+    background-color: $white !important;
+}
+
+header.sticky {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    text-align: left;
+    padding-left: 20px;
+    z-index: 1000;
+
+    ul li a {
+        color: $white !important;
+
+        span {
+            color: $white !important;
+        }
+    }
+}
+
+.nav-collapse {
+    text-align: center;
+    border-radius: 0;
+    box-shadow: 0px 1px 4px #888888;
+    z-index: 3000;
+
+    button {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+
+    .bg-inverse {
+        background-color: $white;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 0 !important;
+
+            li {
+                margin-bottom: 20px;
+
+                a {
+                    color: $dark-color;
+                }
+
+                a:hover {
+                    color: $primary;
+                }
+            }
+
+            li.active a {
+                color: $primary-color;
+                font-weight: 900;
+            }
+        }
+    }
+}
