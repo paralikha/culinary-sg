@@ -2,9 +2,9 @@
 #h-home {
     background-image: url("../../resources/images/bg-home.png");
     -webkit-background-size: 1366px;
-    -moz-background-size: 1366px;
-    -o-background-size: 1366px;
-    background-size: 1366px;
+       -moz-background-size: 1366px;
+         -o-background-size: 1366px;
+            background-size: 1366px;
     background-repeat: no-repeat;
     background-position: bottom center;
     overflow: hidden;
@@ -58,7 +58,10 @@
 // ---about---
 #h-about {  
     background-image: url("../../resources/images/bg-about.png");
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     overflow: hidden;
@@ -198,14 +201,14 @@
 
     .s1 {
         display: table-cell;
-        width: 60px;
+        width: 75px;
         font-size: 100%;
         vertical-align: top;
 
         img {
-            max-width: 120px;
+            max-width: 140px;
             position: absolute;
-            top: 36px;
+            top: 32px;
             left: 0;
         }
     }
@@ -260,7 +263,7 @@
     }
 
     .contact-form {
-        background: rgba(182, 182, 183, 0.75);
+        background: rgba(182, 182, 183, 0.23);
         padding: 50px;
         border-radius: 40px;
     }
@@ -289,4 +292,3 @@
         }
     }
 }
-

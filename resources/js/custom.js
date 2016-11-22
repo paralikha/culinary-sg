@@ -28,31 +28,6 @@
                 $isAnimatedSecond.eq(5).css('animation-delay', '.8s');
                 // $isAnimatedSecondSingle.addClass('animated rollIn').css('animation-delay', '1.7s');
             }
-
-            else if( ( index == 1 || index == 2 ) && nextIndex == 3 ) {
-                $isAnimatedThird.eq(0).addClass('animated fadeInRightBig').css('animation-delay', '.3s'); 
-                $isAnimatedThird.eq(1).addClass('animated fadeInLeftBig').css('animation-delay', '.6s');
-                $isAnimatedThirdSingle.addClass('animated bounceInDown').css('animation-delay', '1.2s');
-            }
         }
     });
 })(jQuery);
-
-
-// lightSlider
-$(document).ready(function() {
-    $('#imageGallery').lightSlider({
-        gallery:true,
-        item:3,
-        loop:false,
-        thumbItem:9,
-        slideMargin:0,
-        enableDrag: false,
-        currentPagerPosition:'left',
-        onSliderLoad: function(el) {
-            el.lightGallery({
-                selector: '#imageGallery .lslide'
-            });
-        }
-    }); 
-});
