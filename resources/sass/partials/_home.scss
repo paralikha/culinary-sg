@@ -2,9 +2,9 @@
 #h-home {
     background-image: url("../../resources/images/bg-home.png");
     -webkit-background-size: 1366px;
-    -moz-background-size: 1366px;
-    -o-background-size: 1366px;
-    background-size: 1366px;
+       -moz-background-size: 1366px;
+         -o-background-size: 1366px;
+            background-size: 1366px;
     background-repeat: no-repeat;
     background-position: bottom center;
     overflow: hidden;
@@ -58,7 +58,10 @@
 // ---about---
 #h-about {  
     background-image: url("../../resources/images/bg-about.png");
-    background-size: cover;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     overflow: hidden;
@@ -289,4 +292,3 @@
         }
     }
 }
-
