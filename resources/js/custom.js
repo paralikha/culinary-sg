@@ -5,6 +5,7 @@
     var $isAnimatedSecond = $('.second .is-animated'),
         $isAnimatedSecondSingle = $('.second .is-animated__single');
 
+
     $('#fullpage').fullpage({
         anchors: ['home', 'about', 'courses', 'schedule', 'n_e', 'contactus'],
         scrollOverflow: true,
@@ -20,6 +21,8 @@
         onLeave: function(index, nextIndex, direction) {
             if (( index == 1 || index == 2 ) && nextIndex == 3 ) { 
                 $isAnimatedSecond.addClass('animated bounceIn'); 
+                $isAnimatedSecond.addClass('animated bounceIn');
+                $isAnimatedSecond.eq(-1).css('animation-delay', '.1s');
                 $isAnimatedSecond.eq(0).css('animation-delay', '.3s');
                 $isAnimatedSecond.eq(1).css('animation-delay', '.4s');
                 $isAnimatedSecond.eq(2).css('animation-delay', '.5s');

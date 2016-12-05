@@ -139,6 +139,10 @@
     transition: 0.4s;
     background-repeat: no-repeat;
 
+    .sched-tab .sched-tab-content:not(.active){
+        display: none;
+    }
+
     .sched-content {
         position: relative;
         display: block;
@@ -183,6 +187,55 @@
             -webkit-transition: background-color .5s ease;
                -moz-transition: background-color .5s ease;
                     transition: background-color .5s ease;
+        }
+    }
+
+    //  tab sched
+    .sched-tab-menu .list-group a {
+        border: none;
+        outline: none;
+        position: relative;
+        display: block;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        background: #B6B6B7;
+        padding: 40px;
+        transition: background-color .5s ease; 
+
+        p {
+            margin-bottom: 0;
+        }
+
+        &:first-child {
+            border-radius: 0;
+        }
+
+        &:last-child {
+            border-radius: 0;
+        }
+
+        &:hover {
+            background: $primary-color;
+            -webkit-transition: background-color .5s ease;
+               -moz-transition: background-color .5s ease;
+                    transition: background-color .5s ease;
+        }
+    }
+
+    .sched-tab-menu a.active {
+        background: $primary-color;
+            -webkit-transition: background-color .5s ease;
+               -moz-transition: background-color .5s ease;
+                    transition: background-color .5s ease;
+    }
+
+    .sched-tab .sched-tab-content {
+        padding: 40px;
+        max-height: 470px;
+
+        p {
+            margin-bottom: 0;
         }
     }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Home | Culinary Institute</title>
+    <title>SSA Culinary Institute</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="180x180" href="resources/images/brand-logo.png">
     <link rel="icon" type="image/png" href="resources/images/brand-logo.png" sizes="32x32">
@@ -13,6 +13,8 @@
     <meta name="theme-color" content="#ffffff">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <link rel="stylesheet" href="dist/css/app.min.css">
+    <link rel="stylesheet" href="vendor/vertical-tabs/css/jquery.tabs.css">
+    <!-- <link rel="stylesheet" href="vendor/vertical-tabs/css/style.css"> -->
     <link rel="stylesheet" href="vendor/fullPage.js/jquery.fullPage.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="vendor/animate.css/animate.css">
@@ -34,11 +36,13 @@
                     <li data-menuanchor="courses" class="nav-item">
                         <a class="nav-link h2" href="#courses">Courses</a></li>
                     <li data-menuanchor="schedule" class="nav-item">
-                        <a class="nav-link h2" href="#schedule">Schedule</a></li>
+                        <a class="nav-link h2" href="#schedule">Schedules</a></li>
                     <li data-menuanchor="n_e" class="nav-item">
                         <a class="nav-link h2" href="#n_e">News &amp; Events</a></li>
                     <li data-menuanchor="contactus" class="nav-item">
                         <a class="nav-link h2" href="#contactus">Contact</a></li>
+                    <li data-menuanchor="contactus" class="nav-item">
+                        <a class="nav-link h2" href="registration.html">Enrol Now</a></li>
                     <li class="nav-item">
                         <a href="#"><span><i class="fa fa-facebook-square" aria-hidden="true"></i></span></a></li>
                 </ul>
@@ -71,7 +75,7 @@
             <div class="title-text">
                 <h1 class="header-text">Bake</h1>
                 <h1 class="header-text"><span>with us</span></h1>
-                <a href="https://www.google.com" class="ripplelink h2 btn-enroll">Enrol Now</a>
+                <a href="registration.html" class="ripplelink h2 btn-enroll">Enrol Now</a>
             </div>
         </div>
 
@@ -154,7 +158,7 @@
             <div class="wrapper">
                 <div class="container">
                     <h1 class="m-b-8 text-white">Schedules</h1>
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col-md-8">
                             <div class="sched-content mCustomScrollbar">
                                 <article>
@@ -243,6 +247,83 @@
                                 </article>
                             </div>
                         </div>
+                    </div> -->
+
+                    <div class="row no-gutter">
+                        <div class="col-md-6 sched-tab-menu m-b-3">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item active"><p><strong>SFC (Baking for a living - Beyond Hobbies): Cakes</strong></p></a>
+                                <a href="#" class="list-group-item"><p><strong>SFC (Baking for a Living - Beyond Hobbies): Buns</strong></p></a>
+                                <a href="#" class="list-group-item"><p><strong>SFC (Baking for a Living - Beyond Hobbies): Choux Pastries</strong></p></a>
+                                <a href="#" class="list-group-item"><p><strong>SFC (Baking for a Living - Beyond Hobbies): Cookies</strong></p></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 sched-tab">
+                            <div class="sched-tab-content mCustomScrollbar m-1 m-t-0 bg-light active">
+                                <div class="m-b-4">
+                                    <article class="m-b-3">
+                                        <h2>Duration: 25 Feb 2017 - 25 Feb 2017</h2>
+                                        <div class="row">
+                                            <div class="col-xs-7">
+                                                <p><strong>Day:</strong> Wednesday</p>
+                                            </div>
+                                            <div class="col-xs-5">
+                                                <p><strong>Status:</strong> Confirmed</p>
+                                            </div>
+                                        </div>
+                                        <p><strong>Time:</strong> 9:00am - 5:00pm</p>
+                                    </article>
+
+                                    <article class="m-b-3">
+                                        <h2>Duration: 25 Feb 2017 - 25 Feb 2017</h2>
+                                        <div class="row">
+                                            <div class="col-xs-7">
+                                                <p><strong>Day:</strong> Wednesday</p>
+                                            </div>
+                                            <div class="col-xs-5">
+                                                <p><strong>Status:</strong> Confirmed</p>
+                                            </div>
+                                        </div>
+                                        <p><strong>Time:</strong> 9:00am - 5:00pm</p>
+                                    </article>
+
+                                    <article class="m-b-3">
+                                        <h2>Duration: 25 Feb 2017 - 25 Feb 2017</h2>
+                                        <div class="row">
+                                            <div class="col-xs-7">
+                                                <p><strong>Day:</strong> Wednesday</p>
+                                            </div>
+                                            <div class="col-xs-5">
+                                                <p><strong>Status:</strong> Confirmed</p>
+                                            </div>
+                                        </div>
+                                        <p><strong>Time:</strong> 9:00am - 5:00pm</p>
+                                    </article>
+
+                                    <article class="m-b-3">
+                                        <h2>Duration: 25 Feb 2017 - 25 Feb 2017</h2>
+                                        <div class="row">
+                                            <div class="col-xs-7">
+                                                <p><strong>Day:</strong> Wednesday</p>
+                                            </div>
+                                            <div class="col-xs-5">
+                                                <p><strong>Status:</strong> Confirmed</p>
+                                            </div>
+                                        </div>
+                                        <p><strong>Time:</strong> 9:00am - 5:00pm</p>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="sched-tab-content bg-light">
+                                <h1 class="text-white">Section 2</h1>
+                            </div>
+                            <div class="sched-tab-content bg-light">
+                                <h1 class="text-white">Section 3</h1>
+                            </div>
+                            <div class="sched-tab-content bg-light">
+                                <h1 class="text-white">Section 4</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -264,8 +345,8 @@
                                 <img src="resources/images/s1.png">
                             </div>
                             <div class="s2">
-                                <h3 class="bg-light n-e-f p-1-5 m-b-2 m-t-3 text-light-weight">Macaroon <br> Madness</h3>
-                                <p>Be the expert in producing these lovely coloured macaroons that we often see as a gift or at tea  parties..</p>
+                                <h3 class="bg-light n-e-f p-1-5 m-b-2 m-t-3 text-light-weight">The Opening of the <br> Biggest Halal Training <br> Centre In Singapore</h3>
+                                <p>SSA Culinary Institute will be the biggest halal culinary training centre in Singapore that allows it's trainees to use their SkillFuture Credit to enroll for its courses..</p>
                                 <a class="text-primary text-black-weight" href="#">Read more</a>
                             </div>
                         </div>
@@ -378,14 +459,27 @@
     <script src="vendor/tether/dist/js/tether.min.js"></script>
     <script src="resources/js/custom.js"></script>
     <script src="vendor/customScrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="resources/js/jquery.tabs.js"></script>
     <script>
         (function($){
             $(window).on("load",function(){
-                $(".sched-content").mCustomScrollbar({
+                $(".sched-tab-content").mCustomScrollbar({
                     axis: "x"
                 });
             });
-        })(jQuery);
+        })(jQuery);  
+
+        //tabs
+        $(document).ready(function() {
+            $(".sched-tab-menu>.list-group>a").click(function(e) {
+                e.preventDefault();
+                $(this).siblings('a.active').removeClass("active");
+                $(this).addClass("active");
+                var index = $(this).index();
+                $(".sched-tab>.sched-tab-content").removeClass("active");
+                $(".sched-tab>.sched-tab-content").eq(index).addClass("active");
+            });
+        });
     </script>
 </body>
 </html>
