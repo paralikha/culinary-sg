@@ -196,6 +196,7 @@
         outline: none;
         position: relative;
         display: block;
+        margin-top: 10px;
         margin-bottom: 10px;
         margin-right: 10px;
         margin-left: 10px;
@@ -231,10 +232,22 @@
     }
 
     .sched-tab .sched-tab-content {
-        padding: 40px;
-        max-height: 470px;
+        padding-top: 40px;
+        padding-right: 30px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+        min-height: 446px;
+        max-height: 446px;
 
         p {
+            margin-bottom: 0;
+        }
+    }
+
+    .sched-tab-content article {
+        margin-bottom: 30px;
+
+        &:last-child {
             margin-bottom: 0;
         }
     }

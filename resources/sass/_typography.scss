@@ -89,6 +89,9 @@ p {
 	&-light {
 		background: $light-color;
 	}
+	&-lighter {
+		background: $lighter-color;
+	}
 }
 
 .text {
@@ -133,4 +136,8 @@ p {
 .n-e-f {
 	font-family: $secondary-font-family !important;
 	text-transform: uppercase;
+}
+
+.u-c {
+	text-transform: uppercase; 
 }
