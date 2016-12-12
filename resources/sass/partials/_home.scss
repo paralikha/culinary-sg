@@ -156,7 +156,8 @@
             margin-right: 10px;
             margin-left: 10px;
             background: $light-color;
-            padding: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             -webkit-transition: background-color .5s ease;
                -moz-transition: background-color .5s ease;
                     transition: background-color .5s ease;
@@ -176,17 +177,14 @@
                     vertical-align: top;
                 }
             }
-        }
 
-        article:last-child {
-            margin-bottom: 0;
-        }
+            &:first-child {
+                padding-top: 0;
+            }
 
-        article:hover {
-            background: $primary-color;
-            -webkit-transition: background-color .5s ease;
-               -moz-transition: background-color .5s ease;
-                    transition: background-color .5s ease;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -232,10 +230,10 @@
     }
 
     .sched-tab .sched-tab-content {
-        padding-top: 40px;
-        padding-right: 30px;
-        padding-bottom: 40px;
-        padding-left: 40px;
+        // padding-top: 40px;
+        // padding-right: 30px;
+        // padding-bottom: 40px;
+        // padding-left: 40px;
         min-height: 446px;
         max-height: 446px;
 
@@ -244,12 +242,51 @@
         }
     }
 
-    .sched-tab-content article {
-        margin-bottom: 30px;
+    // .sched-tab-content article {
+    //     margin-bottom: 30px;
 
-        &:last-child {
-            margin-bottom: 0;
+    //     &:last-child {
+    //         margin-bottom: 0;
+    //     }
+    // }
+
+    // scrollbar
+    #mCSB_1_scrollbar_vertical {
+        margin-right: 20px;
+    }
+
+    // language-tab
+    .lang-navbar {
+        overflow: auto;
+        height: 340px;
+    }
+
+    ul.lang-tab {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+
+        li{
+            background: none;
+            color: #222;
+            display: inline-block;
+            padding: 10px 15px;
+            cursor: pointer;
         }
+
+        li.current {
+            border-bottom: 3px solid $primary;
+            color: #222;
+        }
+    }
+
+    .lang-tab-content {
+        display: none;
+        padding: 15px;
+    }
+
+    .lang-tab-content.current{
+        display: inherit;
     }
 }
 
